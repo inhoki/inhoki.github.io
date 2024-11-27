@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./res/css/bootstrap.min.css">
+    <title>Laporan Harian</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            --padding: 20px;
+        }
+        #container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+            gap: 20px;
+        }
+        .form-container, .report-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 300px;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            margin-top: 10px;
+            display: block;
+        }
+        input[type="text"], select {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #reportOutput {
+            white-space: pre-wrap; /* Keeps formatting in the report */
+            font-family: monospace; /* Monospace for better readability */
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">inHoki</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="container">
+        <div class="form-container">
+            <h1>Laporan Harian</h1>
+            <form id="cashierForm">
+                <label for="shiftTime">Shift Time (Pagi/Malam): </label>
+                <select id="shiftTime" name="shiftTime">
+                    <option value="PAGI">PAGI</option>
+                    <option value="MALAM">MALAM</option>
+                </select>
+
+                <label for="teamName">Nama Team (Pagi/Malam): </label>
+                <select id="teamName" name="teamName">
+                    <option value="HOKI88">HOKI88</option>
+                    <option value="MALAY88">MALAY888</option>
+                    <option value="MEGABET88">MEGABET88</option>
+                    <option value="DRAGON1131">DRAGON1131</option>
+                    <option value="NAGA1131">NAGA1131</option>
+                    <option value="DEWAMALAY88">DEWAMALAY88</option>
+					<option value="LACOSTE128">LACOSTE128</option>
+                </select>
+
+                <label for="nameCoding">Name: </label>
+                <input type="text" id="nameCoding" name="nameCoding" placeholder="Enter Your Name">
+
+                <label for="bankIn">BANK IN (+): </label>
+                <input type="text" id="bankIn" name="bankIn" placeholder="Enter Bank In Amount">
+
+                <label for="bankOut">BANK OUT (-): </label>
+                <input type="text" id="bankOut" name="bankOut" placeholder="Enter Bank Out Amount">
+
+                <label for="jumlahTransaksi">JUMLAH TRANSAKSI: </label>
+                <input type="text" id="jumlahTransaksi" name="jumlahTransaksi" placeholder="Enter Number of Transactions">
+
+                <label for="newMember">NEW MEMBER: </label>
+                <input type="text" id="newMember" name="newMember" placeholder="Enter New Members Count">
+
+                <label for="waMasuk">WA MASUK: </label>
+                <input type="text" id="waMasuk" name="waMasuk" placeholder="Enter WA Masuk Count">
+
+                <label for="telegram">TELEGRAM: </label>
+                <input type="text" id="telegram" name="telegram" placeholder="Enter Telegram Count">
+
+                <label for="reportDate">DATE (dd/mm/yyyy): </label>
+                <input type="text" id="reportDate" name="reportDate">
+
+                <button type="button" onclick="generateReport()">Generate Report</button>
+            </form>
+        </div>
+
+        <div class="report-container">
+            <h2>Generated Report</h2>
+            <div id="reportOutput"></div>
+            <button onclick="copyToClipboard()">Copy Report</button>
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk memformat angka dengan pemisah ribuan
+        function formatNumber(num, locale = 'id-ID') {
+            return num.toLocaleString(locale);
+        }
+
+        // Automatically populate the date field with today's date
+        document.getElementById('reportDate').value = new Date().toLocaleDateString('en-GB');
+
+        function generateReport() {
+            //const shiftNumber = document.getElementById('shiftNumber').value;
+            const shiftTime = document.getElementById('shiftTime').value;
+            const nameCoding = document.getElementById('nameCoding').value;
+            const bankIn = parseFloat(document.getElementById('bankIn').value) || 0;
+            const teamName = document.getElementById('teamName').value;
+            const bankOut = parseFloat(document.getElementById('bankOut').value) || 0;
+            const jumlahTransaksi = document.getElementById('jumlahTransaksi').value || 0;
+            const newMember = document.getElementById('newMember').value || 0;
+            const waMasuk = document.getElementById('waMasuk').value || 0;
+            const telegram = document.getElementById('telegram').value || 0;
+            const reportDate = document.getElementById('reportDate').value;
+
+            // Calculate total automatically
+            const total = bankIn - bankOut;
+
+            const report = `LAPORAN HARIAN
+TEAM ${teamName}
+SHIFT ${shiftTime == "PAGI" ? "1" : "2"} ${shiftTime} ( ${nameCoding.toUpperCase()} )
+${reportDate}
+
+BANK IN: + ${formatNumber(bankIn)}
+BANK OUT: - ${formatNumber(bankOut)}
+TOTAL: ${total >= 0 ? "+ " + formatNumber(total) : formatNumber(total).replace("-", "- ")}
+JUMLAH TRANSAKSI: ${formatNumber(jumlahTransaksi)}
+NEW MEMBER: ${formatNumber(newMember)}
+WA MASUK: ${formatNumber(waMasuk)}
+TELEGRAM: ${formatNumber(telegram)}`;
+
+            document.getElementById('reportOutput').textContent = report;
+        }
+
+        function copyToClipboard() {
+            const reportOutput = document.getElementById('reportOutput');
+            navigator.clipboard.writeText(reportOutput.textContent).then(() => {
+                alert('Report copied to clipboard!');
+            }, (err) => {
+                alert('Failed to copy report: ', err);
+            });
+        }
+    </script>
+</body>
+</html>

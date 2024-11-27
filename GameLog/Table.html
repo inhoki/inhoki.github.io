@@ -1,0 +1,429 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.01, user-scalable=yes">
+		<title>Mega888 GameLog</title>
+		<link rel="stylesheet" href="./res/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./res/dist/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./res/dist/css/AdminLTE.css">
+		<link rel="stylesheet" href="./res/dist/css/skins/skin-blue.min.css">
+		<link rel="stylesheet" href="./res/css/page.css" type="text/css">
+		<link rel="stylesheet" href="./res/js/plug/dialog/d1/skins/black.css">
+		<!--<link rel="stylesheet" href="./res/js/plug/sweetAlert/dist/sweetalert.css">-->
+		<!--[if lt IE 9]>
+												<script src="../res/dist/js/html5shiv.min.js" type="text/javascript"></script>
+												<script src="../res/dist/js/respond.min.js" type="text/javascript"></script>
+												<![endif]-->
+		<link type="text/css" rel="stylesheet" href="https://gamelog.mega166.com/res/js/plug/laypage/laypage.css" id="laypagecss">
+	</head>
+	<body>
+		<div class="" style="display: none; position: absolute;">
+			<div class="aui_outer">
+				<table class="aui_border">
+					<tbody>
+						<tr>
+							<td class="aui_nw"></td>
+							<td class="aui_n"></td>
+							<td class="aui_ne"></td>
+						</tr>
+						<tr>
+							<td class="aui_w"></td>
+							<td class="aui_c">
+								<div class="aui_inner">
+									<table class="aui_dialog">
+										<tbody>
+											<tr>
+												<td colspan="2" class="aui_header">
+													<div class="aui_titleBar">
+														<div class="aui_title" style="cursor: move; display: block;"></div>
+														<a class="aui_close" onfocus="this.blur();" href="javascript:/*artDialog*/;" style="display: block;">×</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="aui_icon" style="display: none;">
+													<div class="aui_iconBg" style="background: none;"></div>
+												</td>
+												<td class="aui_main" style="width: 520px; height: 320px;">
+													<div class="aui_content  " style="padding: 20px 25px;"></div>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" class="aui_footer">
+													<div class="aui_buttons" style="display: none;"></div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td class="aui_e"></td>
+						</tr>
+						<tr>
+							<td class="aui_sw"></td>
+							<td class="aui_s"></td>
+							<td class="aui_se" style="cursor: se-resize;"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!--游戏记录列表 开始-->
+		<div class="box box-primary" id="tb_list_1">
+			<div class="box-header with-border">
+				<h3 class="box-title text-bold"> GameLog List</h3>
+				<div class="box-tools pull-right">
+					<button data-widget="collapse" class="btn btn-box-tool" type="button">
+						<i class="fa fa-minus"></i>
+					</button>
+				</div>
+			</div>
+			<div class="box-body" style="display: block;">
+				<div class="table-responsive">
+					<table class="table table-hover table-bordered" id="data_gameLog">
+						<thead>
+							<tr>
+								<th nowrap="nowrap">GameName</th>
+								<th nowrap="nowrap">TableID</th>
+								<th nowrap="nowrap">Bet</th>
+								<th nowrap="nowrap">Win</th>
+								<th nowrap="nowrap">BeginMoney</th>
+								<th nowrap="nowrap">EndMoney</th>
+								<th nowrap="nowrap">DateTime</th>
+							</tr>
+						</thead>
+						<tbody id="tblData">
+							<tr class="tr_h" id="-1">
+								<td>-</td>
+								<td>
+									<span class="text-red text-bold" id="setScore">Set score：-100.00</span>
+								</td>
+								<td>
+									<span class="text-red text-bold">-</span>
+								</td>
+								<td>
+									<span class="text-red text-bold">-</span>
+								</td>
+								<td>
+									<span class="text-red text-bold">-</span>
+								</td>
+								<td>
+									<span class="text-red text-bold">-</span>
+								</td>
+								<td>2024-11-11 03:22:31</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:11:36" data-logstr="1.00,0.00,100.98,1,5,6,9,4,4,7,4,9,8,3,7,7,9,8,0.04,25,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0,0.00,0" id="195171">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>1.00</td>
+								<td>0.00</td>
+								<td>101.98</td>
+								<td>100.98</td>
+								<td>2024-11-11 03:11:36</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:11:33" data-logstr="1.00,0.00,101.98,6,2,1,9,3,6,2,6,9,2,8,2,5,9,5,0.04,25,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0,0.00,0" id="195142">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>1.00</td>
+								<td>0.00</td>
+								<td>102.98</td>
+								<td>101.98</td>
+								<td>2024-11-11 03:11:33</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:11:30" data-logstr="1.00,0.00,102.98,3,1,5,1,2,1,6,7,8,7,2,6,10,4,8,0.04,25,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1,0.00,0" id="195105">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>1.00</td>
+								<td>0.00</td>
+								<td>103.98</td>
+								<td>102.98</td>
+								<td>2024-11-11 03:11:30</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:11:27" data-logstr="1.00,0.00,103.98,4,8,5,6,6,4,5,6,6,5,7,7,4,5,1,0.04,25,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0,0.00,0" id="195069">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>1.00</td>
+								<td>0.00</td>
+								<td>104.98</td>
+								<td>103.98</td>
+								<td>2024-11-11 03:11:27</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:11:24" data-logstr="1.00,1.20,104.98,3,7,3,4,1,5,9,6,7,6,2,2,7,6,6,0.04,25,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.20,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0,0.00,0" id="195023">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>1.00</td>
+								<td>1.20</td>
+								<td>104.78</td>
+								<td>104.98</td>
+								<td>2024-11-11 03:11:24</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:11:21" data-logstr="1.00,0.00,104.78,3,2,7,6,9,3,2,6,10,9,4,2,4,3,9,0.04,25,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1,0.00,0" id="194987">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>1.00</td>
+								<td>0.00</td>
+								<td>105.78</td>
+								<td>104.78</td>
+								<td>2024-11-11 03:11:21</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:11:18" data-logstr="1.00,0.00,105.78,4,1,5,6,8,4,3,5,6,1,7,5,6,5,6,0.04,25,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0,0.00,0" id="194952">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>1.00</td>
+								<td>0.00</td>
+								<td>106.78</td>
+								<td>105.78</td>
+								<td>2024-11-11 03:11:18</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:11:14" data-logstr="1.00,0.00,106.78,8,3,6,7,2,6,10,9,3,8,2,7,8,1,9,0.04,25,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1,0.00,0" id="194911">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>1.00</td>
+								<td>0.00</td>
+								<td>107.78</td>
+								<td>106.78</td>
+								<td>2024-11-11 03:11:14</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:11:11" data-logstr="1.00,2.00,107.78,9,6,6,6,1,7,3,6,4,6,7,10,6,8,6,0.04,25,0.00,0.80,0.00,0.00,0.00,0.40,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.80,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1,0.00,0" id="194863">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>1.00</td>
+								<td>2.00</td>
+								<td>106.78</td>
+								<td>107.78</td>
+								<td>2024-11-11 03:11:11</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:11:07" data-logstr="1.00,0.00,106.78,4,7,4,8,2,3,7,3,5,1,8,7,5,2,2,0.04,25,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0,0.00,0" id="194822">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>1.00</td>
+								<td>0.00</td>
+								<td>107.78</td>
+								<td>106.78</td>
+								<td>2024-11-11 03:11:07</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:11:04" data-logstr="1.00,1.60,107.78,8,6,6,9,6,8,3,6,4,4,9,8,6,1,2,0.04,25,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.80,0.00,0.00,0.00,0.80,0,0.00,0" id="194789">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>1.00</td>
+								<td>1.60</td>
+								<td>107.18</td>
+								<td>107.78</td>
+								<td>2024-11-11 03:11:04</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:11:01" data-logstr="1.00,0.00,107.18,1,5,3,9,9,3,5,9,9,9,6,5,7,9,9,0.04,25,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0,0.00,0" id="194754">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>1.00</td>
+								<td>0.00</td>
+								<td>108.18</td>
+								<td>107.18</td>
+								<td>2024-11-11 03:11:01</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:10:56" data-logstr="1.00,0.00,108.18,3,2,4,5,6,1,2,10,5,3,10,2,7,3,2,0.04,25,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2,0.00,0" id="194710">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>1.00</td>
+								<td>0.00</td>
+								<td>109.18</td>
+								<td>108.18</td>
+								<td>2024-11-11 03:10:56</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:10:24" data-logstr="1.00,0.00,109.18,3,1,6,7,10,1,5,4,9,2,10,7,7,9,4,0.04,25,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2,0.00,0" id="194322">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>
+									<span class="text-red text-bold">Free game</span>
+								</td>
+								<td>0.00</td>
+								<td>109.18</td>
+								<td>109.18</td>
+								<td>2024-11-11 03:10:24</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:10:21" data-logstr="1.00,0.00,109.18,3,4,8,5,7,5,1,4,4,4,1,2,4,5,8,0.04,25,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0,0.00,0" id="194280">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>
+									<span class="text-red text-bold">Free game</span>
+								</td>
+								<td>0.00</td>
+								<td>109.18</td>
+								<td>109.18</td>
+								<td>2024-11-11 03:10:21</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:10:17" data-logstr="1.00,0.20,109.18,9,2,4,5,5,9,6,8,2,4,5,8,4,1,6,0.04,25,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.20,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0,0.00,0" id="194228">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>
+									<span class="text-red text-bold">Free game</span>
+								</td>
+								<td>0.20</td>
+								<td>108.98</td>
+								<td>109.18</td>
+								<td>2024-11-11 03:10:17</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:10:12" data-logstr="1.00,0.60,108.98,5,5,6,2,8,1,7,9,3,6,2,5,6,10,3,0.04,25,0.00,0.00,0.00,0.00,0.00,0.60,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1,0.00,0" id="194159">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>
+									<span class="text-red text-bold">Free game</span>
+								</td>
+								<td>0.60</td>
+								<td>108.38</td>
+								<td>108.98</td>
+								<td>2024-11-11 03:10:12</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:10:09" data-logstr="1.00,0.00,108.38,1,6,2,8,9,4,6,10,7,9,3,6,6,6,9,0.04,25,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1,0.00,0" id="194114">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>
+									<span class="text-red text-bold">Free game</span>
+								</td>
+								<td>0.00</td>
+								<td>108.38</td>
+								<td>108.38</td>
+								<td>2024-11-11 03:10:09</td>
+							</tr>
+							<tr class="tr_h" data-classid="3" data-linenum="25" data-roundno="0" data-tableid="0" data-gamename="SeaWorld" data-logtime="2024-11-11 03:10:02" data-logstr="1.00,1.80,108.38,7,1,2,9,8,7,5,6,9,3,9,7,7,9,6,0.04,25,0.00,0.00,0.60,0.00,0.00,0.00,0.00,0.00,0.60,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.60,0.00,0.00,0.00,0.00,0.00,0,0.00,0" id="194025">
+								<td id="162">SeaWorld</td>
+								<td>
+									<span class="badge bg-gray">0</span>
+								</td>
+								<td>
+									<span class="text-red text-bold">Free game</span>
+								</td>
+								<td>1.80</td>
+								<td>106.58</td>
+								<td>108.38</td>
+								<td>2024-11-11 03:10:02</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--Pager-->
+				<div id="pager_gameLogList" class="pull-left" style="display: block;">
+					<div name="laypage1.3" class="laypage_main laypageskin_molv" id="laypage_9">
+						<span class="laypage_curr" style="background-color:#00AA91">1</span>
+						<a href="javascript:;" data-page="2">2</a>
+						<a href="javascript:;" data-page="3">3</a>
+						<a href="javascript:;" data-page="4">4</a>
+						<a href="javascript:;" data-page="5">5</a>
+						<span>…</span>
+						<a href="javascript:;" class="laypage_last" title="尾页" data-page="82">82</a>
+						<a href="javascript:;" class="laypage_next" data-page="2">&gt;</a>
+						<span class="laypage_total">
+							<label>jump to</label>
+							<input type="number" min="1" onkeyup="this.value=this.value.replace(/\D/, '');" class="laypage_skip">
+							<label>page</label>
+							<button type="button" class="laypage_btn">GO</button>
+						</span>
+					</div>
+				</div>
+				<div class="overlay" id="overlay_gameLog" style="display: none;">
+					<i class="fa fa-refresh fa-spin"></i>
+				</div>
+			</div>
+		</div>
+		<!--游戏记录列表 结束-->
+		<script src="./res/js/common/jquery-1.11.3.min.js"></script>
+		<script src="./res/dist/js/bootstrap.min.js"></script>
+		<script src="./res/dist/js/app.min.js"></script>
+		<script src="./res/js/common/Function.js"></script>
+		<script src="./res/js/plug/dialog/d1/artDialog.js"></script>
+		<script src="./res/js/plug/dialog/iframe/iframeTools.source.js" type="text/javascript"></script>
+		<script src="./res/js/plug/laypage/laypage.js" type="text/javascript"></script>
+		<!--<script src="./res/js/plug/sweetAlert/dist/sweetalert.min.js" type="text/javascript"></script>-->
+		<script type="text/javascript">
+			function GetGameLogList(a) {
+				$("#pager_gameLogList").hide(), $("#data_gameLog tr:gt(0)").remove();
+				var b = a;
+				$.ajax({
+							url: "../ashx/log/GameLog.ashx",
+							type: "post",
+							dataType: "json",
+							data: {
+								action: "playerGameLog",
+								user: _user,
+								sDate: _sDate,
+								eDate: _eDate,
+								time: _time,
+								sign: _sign,
+								pageIndex: b + 1
+							},
+							success: function(a) {
+									var c, d;
+									a.success ? (c = a.total, a.results.length > 0 ? ($("#data_gameLog tr:gt(0)").remove(), d = "", $.each(a.results, function(b) {
+														var e, f, g, h;
+														switch (_LogDataType = a.results[b].LogDataType) {
+															case 0:
+															case 1:
+																_LogDataStr = a.results[b].LogDataStr, d += ' < tr class = "tr_h"
+																id = "-1" > ',d+=" < td > ",d+=" - ",d+=" < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="Set score："+parseFloat(_LogDataStr).toFixed(2),d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=" < td > ",d+=a.results[b].CreateTime,d+=" < /td>",d+=" < /tr>";break;case 3:break;case 4:switch(_LogDataStr=a.results[b].LogDataStr,_arr=new Array,_arr=_LogDataStr.split(","),e=0,e=_arr.length-1,f=a.results[b].GameName,g=a.results[b].GameID){case 12:h=_arr[e],1==h&&(f="GoldRush"),2==h&&(f="Hanzo"),3==h&&(f="GoldenTouch"),4==h&&(f="Narcos"),5==h&&(f="Conan");break;case 36:h=_arr[e],1==h&&(f="SilentRun");break;case 41:h=_arr[e],1==h&&(f="CleopatraRiches"),2==h&&(f="BlazeOfRa"),3==h&&(f="GoldenCok"),4==h&&(f="SteamTower"),5==h&&(f="Xman Magic"),6==h&&(f="Masquerade"),7==h&&(f="PondOfRiches"),8==h&&(f="CashNoire"),9==h&&(f="GiftsFromSanta");break;case 42:h=_arr[e],1==h&&(f="ElvenMagic");break;case 65:h=_arr[e],1==h&&(f="BigWinCat"),2==h&&(f="JingleBells"),3==h&&(f="FortuneCharm"),4==h&&(f="SizzLing"),5==h&&(f="DesertGem"),6==h&&(f="WhiteSnakeLady"),7==h&&(f="Matsuri"),8==h&&(f="SwordOfKhans"),9==h&&(f="DimSumPrize");break;case 66:h=_arr[e],1==h&&(f="FireWorks"),2==h&&(f="LuckyKoi"),3==h&&(f="Lights"),4==h&&(f="VegasNightLife");break;case 86:h=_arr[e],1==h&&(f="LuckyLittleGods"),2==h&&(f="HotLine"),3==h&&(f="DragonMaiden"),4==h&&(f="Raging"),5==h&&(f="PenguinCity"),6==h&&(f="DrFortuno"),7==h&&(f="DragonStrike"),8==h&&(f="GoldenBeauty"),9==h&&(f="KingOfGhoto");break;case 166:h=_arr[e],1==h&&(f="ManicMillions"),2==h&&(f="JKRaiders"),3==h&&(f="Cash Vandal"),4==h&&(f="MagicShoppe"),5==h&&(f="Beast"),6==h&&(f="SixAcrobats");break;case 113:h=_arr[e],1==h&&(f="DaSiXi"),2==h&&(f="FartGirl"),3==h&&(f="Motorcycle");break;case 114:h=_arr[e],1==h&&(f="FruitVsCandy"),2==h&&(f="TempleQuest"),3==h&&(f="ChineseLino"),4==h&&(f="Robin"),5==h&&(f="WolfHunters"),6==h&&(f="Iavn"),7==h&&(f="RazorShark");break;case 116:h=_arr[e],1==h&&(f="LostIsland"),2==h&&(f="Doom"),3==h&&(f="Royal"),4==h&&(f="Santa"),5==h&&(f="LuckyNewYear"),6==h&&(f="Zombie"),7==h&&(f="DarkVortex"),8==h&&(f="Jungle"),9==h&&(f="ChineseNewYear"),10==h&&(f="Zombie"),11==h&&(f="DragonHero");break;case 153:h=_arr[e],1==h&&(f="LuckyDuck");break;case 154:h=_arr[e],1==h&&(f="FortuneFest");break;case 155:h=_arr[e],1==h&&(f="IreLand"),2==h&&(f="LuckyNeko"),3==h&&(f="CaiShenGold"),4==h&&(f="CocktailNights");break;case 156:h=_arr[e],1==h&&(f="NativeIndian");break;case 157:h=_arr[e],1==h&&(f="SnowWorld");break;case 158:h=_arr[e],1==h&&(f="SushiOishi"),2==h&&(f="WildFireworks"),3==h&&(f="GodOfCookery");break;case 162:h=_arr[e],1==h&&(f="LotusLegend"),2==h&&(f="Great88"),3==h&&(f="Agent51"),4==h&&(f="Celebration"),5==h&&(f="ClashOfTheBeasts"),6==h&&(f="FloatingDragon");break;case 179:h=_arr[e],1==h&&(f="Dragonz"),2==h&&(f="TempleOfWealth"),3==h&&(f="DwarfsGoneWild"),4==h&&(f="TigerFortune"),5==h&&(f="StickBandits");break;case 190:h=_arr[e],1==h&&(f="Lion Dance"),2==h&&(f="ChampionsOfRome"),3==h&&(f="YinYang"),4==h&&(f="Glory"),5==h&&(f="GoldenColts"),6==h&&(f="BigChef"),7==h&&(f="WolfRun");break;case 191:h=_arr[e],1==h&&(f="GoldenMonkey")}d+=' < tr class = "tr_h"
+																id = "-1" > ',d+=" < td > ",d+=f,d+=" < /td>",167==a.results[b].GameID||168==a.results[b].GameID||170==a.results[b].GameID||171==a.results[b].GameID||174==a.results[b].GameID?(d+=' < td > < span class = "text-red text-bold" > ',d+="JackPot："+parseFloat(_LogDataStr).toFixed(2),d+="</span> < /td>"):(_arr=new Array,_arr=_LogDataStr.split(","),d+=' < td > < span class = "text-red text-bold" > ',d+="JackPot："+_arr[1],d+="</span> < /td>"),d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=" < td > ",d+=a.results[b].CreateTime,d+=" < /td>",d+=" < /tr>";break;case 5:switch(_LogDataStr=a.results[b].LogDataStr,_arr=new Array,_arr=_LogDataStr.split(","),_arr[3]=0==_arr[3]?"Double loss":"Doulbe win",e=0,e=_arr.length-1,f=a.results[b].GameName,g=a.results[b].GameID){case 12:h=_arr[e],1==h&&(f="GoldRush"),2==h&&(f="Hanzo"),3==h&&(f="GoldenTouch"),4==h&&(f="Narcos"),5==h&&(f="Conan");break;case 36:h=_arr[e],1==h&&(f="SilentRun");break;case 41:h=_arr[e],1==h&&(f="CleopatraRiches"),2==h&&(f="BlazeOfRa"),3==h&&(f="GoldenCok"),4==h&&(f="SteamTower"),5==h&&(f="Xman Magic"),6==h&&(f="Masquerade"),7==h&&(f="PondOfRiches"),8==h&&(f="CashNoire"),9==h&&(f="GiftsFromSanta");break;case 42:h=_arr[e],1==h&&(f="ElvenMagic");break;case 65:h=_arr[e],1==h&&(f="BigWinCat"),2==h&&(f="JingleBells"),3==h&&(f="FortuneCharm"),4==h&&(f="SizzLing"),5==h&&(f="DesertGem"),6==h&&(f="WhiteSnakeLady"),7==h&&(f="Matsuri"),8==h&&(f="SwordOfKhans"),9==h&&(f="DimSumPrize");break;case 66:h=_arr[e],1==h&&(f="FireWorks"),2==h&&(f="LuckyKoi"),3==h&&(f="Lights"),4==h&&(f="VegasNightLife");break;case 86:h=_arr[e],1==h&&(f="LuckyLittleGods"),2==h&&(f="HotLine"),3==h&&(f="DragonMaiden"),4==h&&(f="Raging"),5==h&&(f="PenguinCity"),6==h&&(f="DrFortuno"),7==h&&(f="DragonStrike"),8==h&&(f="GoldenBeauty"),9==h&&(f="KingOfGhoto");break;case 166:h=_arr[e],1==h&&(f="ManicMillions"),2==h&&(f="JKRaiders"),3==h&&(f="Cash Vandal"),4==h&&(f="MagicShoppe"),5==h&&(f="Beast"),6==h&&(f="SixAcrobats");break;case 113:h=_arr[e],1==h&&(f="DaSiXi"),2==h&&(f="FartGirl"),3==h&&(f="Motorcycle");break;case 114:h=_arr[e],1==h&&(f="FruitVsCandy"),2==h&&(f="TempleQuest"),3==h&&(f="ChineseLino"),4==h&&(f="Robin"),5==h&&(f="WolfHunters"),6==h&&(f="Iavn"),7==h&&(f="RazorShark");break;case 116:h=_arr[e],1==h&&(f="LostIsland"),2==h&&(f="Doom"),3==h&&(f="Royal"),4==h&&(f="Santa"),5==h&&(f="LuckyNewYear"),6==h&&(f="Zombie"),7==h&&(f="DarkVortex"),8==h&&(f="Jungle"),9==h&&(f="ChineseNewYear"),10==h&&(f="Zombie"),11==h&&(f="DragonHero");break;case 153:h=_arr[e],1==h&&(f="LuckyDuck");break;case 154:h=_arr[e],1==h&&(f="FortuneFest");break;case 155:h=_arr[e],1==h&&(f="IreLand"),2==h&&(f="LuckyNeko"),3==h&&(f="CaiShenGold"),4==h&&(f="CocktailNights");break;case 156:h=_arr[e],1==h&&(f="NativeIndian");break;case 157:h=_arr[e],1==h&&(f="SnowWorld");break;case 158:h=_arr[e],1==h&&(f="SushiOishi"),2==h&&(f="WildFireworks"),3==h&&(f="GodOfCookery");break;case 162:h=_arr[e],1==h&&(f="LotusLegend"),2==h&&(f="Great88"),3==h&&(f="Agent51"),4==h&&(f="Celebration"),5==h&&(f="ClashOfTheBeasts"),6==h&&(f="FloatingDragon");break;case 179:h=_arr[e],1==h&&(f="Dragonz"),2==h&&(f="TempleOfWealth"),3==h&&(f="DwarfsGoneWild"),4==h&&(f="TigerFortune"),5==h&&(f="StickBandits");break;case 190:h=_arr[e],1==h&&(f="Lion Dance"),2==h&&(f="ChampionsOfRome"),3==h&&(f="YinYang"),4==h&&(f="Glory"),5==h&&(f="GoldenColts"),6==h&&(f="BigChef"),7==h&&(f="WolfRun");break;case 191:h=_arr[e],1==h&&(f="GoldenMonkey")}d+=' < tr class = "tr_h"
+																id = "-1" > ',d+=" < td > ",d+=f,d+=" < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+=_arr[3],d+="</span> < /td>",d+=" < td > ",d+=parseFloat(a.results[b].bet).toFixed(2),d+=" < /td>",d+=" < td > ",d+=parseFloat(a.results[b].Win).toFixed(2),d+=" < /td>",d+=" < td > ",d+=parseFloat(a.results[b].BeginBlance).toFixed(2),d+=" < /td>",d+=" < td > ",d+=parseFloat(a.results[b].EndBlance).toFixed(2),d+=" < /td>",d+=" < td > ",d+=a.results[b].CreateTime,d+=" < /td>",d+=" < /tr>";break;case 6:switch(_LogDataStr=a.results[b].LogDataStr,_arr=new Array,_arr=_LogDataStr.split(","),e=0,e=_arr.length-1,f=a.results[b].GameName,g=a.results[b].GameID){case 12:h=_arr[e],1==h&&(f="GoldRush"),2==h&&(f="Hanzo"),3==h&&(f="GoldenTouch"),4==h&&(f="Narcos"),5==h&&(f="Conan");break;case 36:h=_arr[e],1==h&&(f="SilentRun");break;case 41:h=_arr[e],1==h&&(f="CleopatraRiches"),2==h&&(f="BlazeOfRa"),3==h&&(f="GoldenCok"),4==h&&(f="SteamTower"),5==h&&(f="Xman Magic"),6==h&&(f="Masquerade"),7==h&&(f="PondOfRiches"),8==h&&(f="CashNoire"),9==h&&(f="GiftsFromSanta");break;case 42:h=_arr[e],1==h&&(f="ElvenMagic");break;case 65:h=_arr[e],1==h&&(f="BigWinCat"),2==h&&(f="JingleBells"),3==h&&(f="FortuneCharm"),4==h&&(f="SizzLing"),5==h&&(f="DesertGem"),6==h&&(f="WhiteSnakeLady"),7==h&&(f="Matsuri"),8==h&&(f="SwordOfKhans"),9==h&&(f="DimSumPrize");break;case 66:h=_arr[e],1==h&&(f="FireWorks"),2==h&&(f="LuckyKoi"),3==h&&(f="Lights"),4==h&&(f="VegasNightLife");break;case 86:h=_arr[e],1==h&&(f="LuckyLittleGods"),2==h&&(f="HotLine"),3==h&&(f="DragonMaiden"),4==h&&(f="Raging"),5==h&&(f="PenguinCity"),6==h&&(f="DrFortuno"),7==h&&(f="DragonStrike"),8==h&&(f="GoldenBeauty"),9==h&&(f="KingOfGhoto");break;case 166:h=_arr[e],1==h&&(f="ManicMillions"),2==h&&(f="JKRaiders"),3==h&&(f="Cash Vandal"),4==h&&(f="MagicShoppe"),5==h&&(f="Beast"),6==h&&(f="SixAcrobats");break;case 113:h=_arr[e],1==h&&(f="DaSiXi"),2==h&&(f="FartGirl"),3==h&&(f="Motorcycle");break;case 114:h=_arr[e],1==h&&(f="FruitVsCandy"),2==h&&(f="TempleQuest"),3==h&&(f="ChineseLino"),4==h&&(f="Robin"),5==h&&(f="WolfHunters"),6==h&&(f="Iavn"),7==h&&(f="RazorShark");break;case 116:h=_arr[e],1==h&&(f="LostIsland"),2==h&&(f="Doom"),3==h&&(f="Royal"),4==h&&(f="Santa"),5==h&&(f="LuckyNewYear"),6==h&&(f="Zombie"),7==h&&(f="DarkVortex"),8==h&&(f="Jungle"),9==h&&(f="ChineseNewYear"),10==h&&(f="Zombie"),11==h&&(f="DragonHero");break;case 153:h=_arr[e],1==h&&(f="LuckyDuck");break;case 154:h=_arr[e],1==h&&(f="FortuneFest");break;case 155:h=_arr[e],1==h&&(f="IreLand"),2==h&&(f="LuckyNeko"),3==h&&(f="CaiShenGold"),4==h&&(f="CocktailNights");break;case 156:h=_arr[e],1==h&&(f="NativeIndian");break;case 157:h=_arr[e],1==h&&(f="SnowWorld");break;case 158:h=_arr[e],1==h&&(f="SushiOishi"),2==h&&(f="WildFireworks"),3==h&&(f="GodOfCookery");break;case 162:h=_arr[e],1==h&&(f="LotusLegend"),2==h&&(f="Great88"),3==h&&(f="Agent51"),4==h&&(f="Celebration"),5==h&&(f="ClashOfTheBeasts"),6==h&&(f="FloatingDragon");break;case 179:h=_arr[e],1==h&&(f="Dragonz"),2==h&&(f="TempleOfWealth"),3==h&&(f="DwarfsGoneWild"),4==h&&(f="TigerFortune"),5==h&&(f="StickBandits");break;case 190:h=_arr[e],1==h&&(f="Lion Dance"),2==h&&(f="ChampionsOfRome"),3==h&&(f="YinYang"),4==h&&(f="Glory"),5==h&&(f="GoldenColts"),6==h&&(f="BigChef"),7==h&&(f="WolfRun");break;case 191:h=_arr[e],1==h&&(f="GoldenMonkey")}(35==a.results[b].GameID||36==a.results[b].GameID||54==a.results[b].GameID||94==a.results[b].GameID||95==a.results[b].GameID||113==a.results[b].GameID)&&(_LogDataStr=a.results[b].LogDataStr),d+=' < tr class = "tr_h"
+																id = "-1" > ',d+=" < td > ",d+=f,d+=" < /td>",13==a.results[b].GameID||40==a.results[b].GameID?(_LogDataStr=a.results[b].LogDataStr,_arr=new Array,_arr=_LogDataStr.split(","),d+=' < td > < span class = "text-red text-bold" > ',d+="Game bonus："+parseFloat(_arr[0]).toFixed(2),d+="</span> < /td>"):(_LogDataStr=a.results[b].LogDataStr,d+=' < td > < span class = "text-red text-bold" > ',d+="Game bonus："+parseFloat(_LogDataStr).toFixed(2),d+="</span> < /td>"),d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=" < td > ",d+=a.results[b].CreateTime,d+=" < /td>",d+=" < /tr>";break;case 8:_LogDataStr=a.results[b].LogDataStr,_arr=new Array,_arr=_LogDataStr.split(","),d+=' < tr class = "tr_h"
+																id = "-1" > ',d+=" < td > ",d+=' < img src = "../res/img/pic/RedEnvelope.png"
+																class = "img-responsive center-block" / > ',d+=" < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="Red Envelope："+_arr[1],d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=" < td > ",d+=a.results[b].CreateTime,d+=" < /td>",d+=" < /tr>";break;case 128:_LogDataStr=a.results[b].LogDataStr,d+=' < tr class = "tr_h"
+																id = "-1" > ',d+=" < td > ",d+=" - ",d+=" < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="Reward："+parseFloat(_LogDataStr).toFixed(2),d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=' < td > < span class = "text-red text-bold" > ',d+="-",d+="</span> < /td>",d+=" < td > ",d+=a.results[b].CreateTime,d+=" < /td>",d+=" < /tr>";break;default:switch(_LogDataStr=a.results[b].LogDataStr,_arr=new Array,_arr=_LogDataStr.split(","),e=0,e=_arr.length-1,f=a.results[b].GameName,g=a.results[b].GameID,_Bet=parseFloat(a.results[b].bet).toFixed(2),_Win=parseFloat(a.results[b].Win).toFixed(2),d_ClassID=a.results[b].ClassID,d_LineNum=a.results[b].LineNum,d_RoundNo=a.results[b].RoundNO,d_GameName=f,d_LogTime=a.results[b].CreateTime,d_LogStr=a.results[b].LogDataStr,d_TableID=a.results[b].TableID,d+=172==a.results[b].GameID&&0==_Win?' < tr class = "tr_h"
+																id = "-1" > ':175==a.results[b].GameID?0==_arr[3]||_arr.length<=4?' < tr class = "tr_h"
+																id = "-1" > ':' < tr class = "tr_h"
+																data - classid = "'+d_ClassID+'"
+																data - linenum = "'+d_LineNum+'"
+																data - roundno = "'+d_RoundNo+'"
+																data - tableid = "'+d_TableID+'"
+																data - gamename = "'+d_GameName+'"
+																data - logtime = "'+d_LogTime+'"
+																data - logstr = "'+d_LogStr+'"
+																id = "'+a.results[b].id+'" > ':' < tr class = "tr_h"
+																data - classid = "'+d_ClassID+'"
+																data - linenum = "'+d_LineNum+'"
+																data - roundno = "'+d_RoundNo+'"
+																data - tableid = "'+d_TableID+'"
+																data - gamename = "'+d_GameName+'"
+																data - logtime = "'+d_LogTime+'"
+																data - logstr = "'+d_LogStr+'"
+																id = "'+a.results[b].id+'" > ',g){case 12:h=_arr[e],1==h&&(f="GoldRush"),2==h&&(f="Hanzo"),3==h&&(f="GoldenTouch"),4==h&&(f="Narcos"),5==h&&(f="Conan");break;case 36:h=_arr[e],1==h&&(f="SilentRun");break;case 41:h=_arr[e],1==h&&(f="CleopatraRiches"),2==h&&(f="BlazeOfRa"),3==h&&(f="GoldenCok"),4==h&&(f="SteamTower"),5==h&&(f="Xman Magic"),6==h&&(f="Masquerade"),7==h&&(f="PondOfRiches"),8==h&&(f="CashNoire"),9==h&&(f="GiftsFromSanta");break;case 42:h=_arr[e],1==h&&(f="ElvenMagic");break;case 65:h=_arr[e],1==h&&(f="BigWinCat"),2==h&&(f="JingleBells"),3==h&&(f="FortuneCharm"),4==h&&(f="SizzLing"),5==h&&(f="DesertGem"),6==h&&(f="WhiteSnakeLady"),7==h&&(f="Matsuri"),8==h&&(f="SwordOfKhans"),9==h&&(f="DimSumPrize");break;case 66:h=_arr[e],1==h&&(f="FireWorks"),2==h&&(f="LuckyKoi"),3==h&&(f="Lights"),4==h&&(f="VegasNightLife");break;case 86:h=_arr[e],1==h&&(f="LuckyLittleGods"),2==h&&(f="HotLine"),3==h&&(f="DragonMaiden"),4==h&&(f="Raging"),5==h&&(f="PenguinCity"),6==h&&(f="DrFortuno"),7==h&&(f="DragonStrike"),8==h&&(f="GoldenBeauty"),9==h&&(f="KingOfGhoto");break;case 166:h=_arr[e],1==h&&(f="ManicMillions"),2==h&&(f="JKRaiders"),3==h&&(f="Cash Vandal"),4==h&&(f="MagicShoppe"),5==h&&(f="Beast"),6==h&&(f="SixAcrobats");break;case 113:h=_arr[e],1==h&&(f="DaSiXi"),2==h&&(f="FartGirl"),3==h&&(f="Motorcycle");break;case 114:h=_arr[e],1==h&&(f="FruitVsCandy"),2==h&&(f="TempleQuest"),3==h&&(f="ChineseLino"),4==h&&(f="Robin"),5==h&&(f="WolfHunters"),6==h&&(f="Iavn"),7==h&&(f="RazorShark");break;case 116:h=_arr[e],1==h&&(f="LostIsland"),2==h&&(f="Doom"),3==h&&(f="Royal"),4==h&&(f="Santa"),5==h&&(f="LuckyNewYear"),6==h&&(f="Zombie"),7==h&&(f="DarkVortex"),8==h&&(f="Jungle"),9==h&&(f="ChineseNewYear"),10==h&&(f="Zombie"),11==h&&(f="DragonHero");break;case 153:h=_arr[e],1==h&&(f="LuckyDuck");break;case 154:h=_arr[e],1==h&&(f="FortuneFest");break;case 155:h=_arr[e],1==h&&(f="IreLand"),2==h&&(f="LuckyNeko"),3==h&&(f="CaiShenGold"),4==h&&(f="CocktailNights");break;case 156:h=_arr[e],1==h&&(f="NativeIndian");break;case 157:h=_arr[e],1==h&&(f="SnowWorld");break;case 158:h=_arr[e],1==h&&(f="SushiOishi"),2==h&&(f="WildFireworks"),3==h&&(f="GodOfCookery");break;case 162:h=_arr[e],1==h&&(f="LotusLegend"),2==h&&(f="Great88"),3==h&&(f="Agent51"),4==h&&(f="Celebration"),5==h&&(f="ClashOfTheBeasts"),6==h&&(f="FloatingDragon");break;case 179:h=_arr[e],1==h&&(f="Dragonz"),2==h&&(f="TempleOfWealth"),3==h&&(f="DwarfsGoneWild"),4==h&&(f="TigerFortune"),5==h&&(f="StickBandits");break;case 190:h=_arr[e],1==h&&(f="Lion Dance"),2==h&&(f="ChampionsOfRome"),3==h&&(f="YinYang"),4==h&&(f="Glory"),5==h&&(f="GoldenColts"),6==h&&(f="BigChef"),7==h&&(f="WolfRun");break;case 191:h=_arr[e],1==h&&(f="GoldenMonkey")}d+=' < td id = "'+a.results[b].GameID+'" > ',d+=f,d+="</td>",d+=' < td > < span class = "badge bg-gray" > ',d+=a.results[b].TableID,d+="</span> < /td>",0==_Bet?(d+=' < td > < span class = "text-red text-bold" > ',d+="Free game",d+="</span> < /td>"):(d+=" < td > ",d+=parseFloat(a.results[b].bet).toFixed(2),d+=" < /td>"),d+=" < td > ",d+=parseFloat(a.results[b].Win).toFixed(2),d+=" < /td>",d+=" < td > ",d+=parseFloat(a.results[b].BeginBlance).toFixed(2),d+=" < /td>",d+=" < td > ",d+=parseFloat(a.results[b].EndBlance).toFixed(2),d+=" < /td>",d+=" < td > ",d+=a.results[b].CreateTime,d+=" < /td>",d+=" < /tr>"}}),$("#tblData").append(d),$("#data_gameLog,#pager_gameLogList").show(),$("#overlay_gameLog").fadeOut(1e3),laypage({cont:"pager_gameLogList",pages:numPages(c,pageSize),skip:!0,skin:"#00AA91",first:1,last:numPages(c,pageSize),prev:"<",next:">",curr:b+1,groups:5,jump:function(a,b){b||pageselectCallback(a.curr-1)}})):($("#overlay_gameLog,#pager_gameLogList").fadeOut(1e3),web_tips("No game log."))):($("#overlay_gameLog").fadeOut(1e3),web_tips(a.msg))},beforeSend:function(){$("#overlay_gameLog").show()},complete:function(){bindHandler()}})}function pageselectCallback(a){GetGameLogList(a)}function bindHandler(){$("#data_gameLog tbody tr").on("click",function(a){var b,c,d,e,f,g,h,i,j,k,l;"click"==a.type&&(b=$(this).attr("id"),"-1"!=b&&(c=$(this).data("classid"),d=$(this).data("linenum"),e=$(this).data("roundno"),f=$(this).data("gamename"),g=$(this).data("logtime"),h=$(this).data("logstr"),i=$(this).data("tableid"),j=$(this).find("td").attr("id"),k=_sDate,l="CheckGameType.aspx?User="+_user+"&ListID="+b+"&GameID="+j+"&DateFlag="+k+"&ClassID="+c+"&GameName="+f+"&LogTime="+g+"&LineNum="+d+"&RoundNO="+e+"&TableID="+i+"&LogStr="+h,web_open(l)))})}var pageIndex=0,pageSize=20,_sDate=GetQueryString("logdate_begin"),_eDate=GetQueryString("logdate_end"),_user=GetQueryString("playername"),_time=GetQueryString("time"),_sign=GetQueryString("sign"),_LogDataType=0,_arr,_LogDataStr,d_ClassID,d_LineNum,d_RoundNo,d_GameName,d_LogTime,d_LogStr,_Bet=0,_Win=0,d_TableID;$(function(){$("#pager_gameLogList").html(""),GetGameLogList(0)});
+		</script>
+		<script>
+			document.querySelectorAll("[id='162']").forEach(e => e.innerHTML = 'GreatBlue');
+		</script>
+		<div style="display: none; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; cursor: move; opacity: 0; background: rgb(255, 255, 255);"></div>
+	</body>
+</html>

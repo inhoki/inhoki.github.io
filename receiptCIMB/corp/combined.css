@@ -1,0 +1,1030 @@
+FORM
+{
+	margin	: 0;
+}
+
+.frm
+{
+    font-family: Verdana;
+    margin	: 0;
+}
+
+.h1
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.lbl
+{
+    font-size: 12px;
+}
+
+.lbl-m
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-pnl
+{
+    font-size: 12px;
+    text-align: right;
+    background-color: #C3D9FF;
+}
+
+.topheader
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.link
+{
+    font-size: 12px;
+    text-decoration: none;
+}
+
+li
+{
+	font-size : 9pt;
+}
+
+a
+{
+	color : black;
+	font-size : 9pt;
+}
+
+a:hover
+{
+	color : blue;
+	font-weight : bold;
+	font-size : 9pt;
+}
+
+input, select, option
+{
+	font-size : 9pt;
+	font-family : Arial;
+}
+
+.clsMessage
+{
+	font-size : 10pt;
+	font-family : Arial;
+	background-color : #e6ffcc;
+}
+
+.clsPageHeader
+{
+	font-size : 11pt;
+	font-weight : bold;
+	font-family : Arial;
+	color : #FF7B19;
+}
+
+.clsFormDom
+{
+	margin : 0px;
+	spacing : 1px;
+	background-color : #FFFFFF;
+
+}
+
+.clsUserInfo
+{
+	font-family : Arial;
+	font-weight : bold;
+	font-size : 9pt;
+	border-style : solid;
+	border-width : 2px;
+	border-color : #00565b;
+	background-color : #FFFFA0;
+	padding : 4px;
+}
+
+.clsPortalInfo
+{
+	font-family : Arial;
+	font-size : 8pt;
+	font-weight : bold;
+	border-style : solid;
+	border-width : 2px;
+	border-color : #00565b;
+	background-color : #c4e1ff;
+	padding : 4;
+}
+
+.clsTabList
+{
+	font-size : 8pt;
+	background-color : #9E9E9E;
+	margin-left : 2px;
+	padding : 2px;
+	cursor : hand;
+}
+
+.clsTabListOn
+{
+	font-size : 8pt;
+	font-weight : bold;
+	border-width : 0px;
+	color : white;
+	background-color: #00565b;
+	margin-left : 2px;
+	padding : 2px;
+	border-width : 1;
+	border-bottom-width : 0;
+	border-color : black;
+	cursor : hand;
+}
+
+.clsCopyright
+{
+	font-family : Arial;
+	font-size : 7pt;
+	color : #000000;
+	font-weight : normal;
+}
+
+.clsList
+{
+	background-color : #FFFFA0;
+}
+
+.clsUserList td
+{
+	text-align : center;
+}
+
+.clsInstruction
+{
+	font-family : Arial;
+	font-size : 8pt;
+	color : #064394;
+}
+
+.clsInstruction2
+{
+	font-family : Arial;
+	font-size : 10pt;
+	color :  	#000000;
+}
+
+.clsInstruction li
+{
+	font-style : italic;
+}
+
+.clsMenuItem
+{
+	border-style : outset;
+	border-color : #d81e05;
+	padding : 4px;
+	background-color : #d81e05;
+	color : white;
+	font-size : 8pt;
+	font-weight : bold;
+	font-family : Arial;
+	cursor : hand;
+	filter : alpha(style=0,opacity=80)
+}
+
+.clsMenuItemOver
+{
+	border-style : inset;
+	border-color : #d81e05;
+	padding : 4px;
+	background-color : yellow;
+	color : #d81e05;
+	font-size : 8pt;
+	font-weight : bold;
+	font-family : Arial;
+	cursor : hand;
+}
+
+.clsMessage
+{
+	padding : 4px;
+	background-color : #e6ffcc;
+	color : black;
+	font-size : 10pt;
+	font-family : Arial;
+}
+
+.clsRed
+{
+	background-color : #00565b;
+}
+
+.clsOdd
+{
+	font-family : Arial;
+	color : #000000;
+	background-color: #f3ebe8;
+}
+
+.clsOddNew
+{
+	font-family : Arial;
+	color : #000000;
+	background-color: #d6dae4;
+}
+
+.colPadding
+{
+	padding-left: 1cm;
+}
+
+.clsTotal
+{
+	font-family : Arial;
+	font-weight : bold;
+	color : #0049A2;
+	background-color: #e0e0e0;
+}
+
+.clsHide
+{
+        border:0
+	background : #dfefff;
+
+}
+
+.clsTableSpace
+{
+	margin : 0px;
+	padding : 3;
+	spacing : 1;
+	background-color : #c4e1ff;
+}
+
+.clsSearch
+{
+	margin : 0px;
+	padding : 3;
+	spacing : 1;
+	background-color : #c4e1ff;
+}
+
+.clsBtnBar
+{
+	text-align	: right;
+	background-color: #FFFFFF;
+	height		: 50;
+	vertical-align	: middle;
+}
+
+.clsInboxHdr
+{
+	background-color: #CCCC99;
+	font-size	: x-small;
+	color		: black;
+	padding-left	: 5px;
+	padding-right	: 5px;
+}
+
+
+.clsInboxDet TD
+{
+	font-size	: 9pt;
+	color		: black;
+	padding-left	: 5px;
+	padding-right	: 5px;
+}
+
+.clsValueNumeric
+{
+	color : black;
+	text-align : right;
+}
+
+.clsLink
+{
+	text-decoration	: none;
+	cursor		: hand;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	border: none;
+}
+
+a.clsLink:hover
+{
+    color : yellow;
+	font-weight : bold;
+	font-size : 9pt;
+}
+
+.clsLinkTab
+{
+	text-decoration	: none;
+	cursor		: hand;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	border: none;
+}
+
+a.clsLinkTab:hover
+{
+    color : yellow;
+	font-weight : bold;
+	font-size : 9pt;
+}
+
+.clsLabel
+{
+	font-weight : bold;
+	color : #336699;
+	background-color: #FFFFFF;
+}
+
+.clsValue
+{
+	color : #3F3F3F;
+	font-weight : bold;
+}
+
+.clsNumeric
+{
+	text-align	: right;
+}
+
+.clsValNum
+{
+	padding-right	: 0.5cm;
+	text-align	: right;
+}
+
+.clsSubHeaderLink
+{
+	font-size	: 75%;
+	font-family	: Arial;
+	color		: white;
+	background-color: #00565b;
+	text-align	: right;
+}
+
+.clsSubHeaderLink A
+{
+	color	: white;
+}
+
+.clsLabelM
+{
+	font-weight	: bold;
+}
+
+
+.clsRecActBtn
+{
+	width	: 75;
+}
+
+.clsMsgFormHdr
+{
+	background-color : #b5cccb;
+}
+
+.clsStdBtn
+{
+	width	: 70;
+}
+
+.clsAlert
+{
+	border-width : thin;
+	border-color : black;
+	border-style : solid;
+	color : red;
+	font-family : Arial;
+	font-size : 11pt;
+	font-weight : bold;
+	background-color : beige;
+	margin : 5px;
+	padding : 5px;
+}
+
+.userData
+{
+	behavior:url(#default#userdata);
+}
+
+.clsForm2
+{
+	background-color	: #B2B2B2;
+	border			: 1px;
+	margin			: 0px;
+	padding			: 3;
+	table-layout		: fixed;
+	width			: 100%;
+}
+
+.clsGenHeader
+{
+	font-size : 13pt;
+	font-weight : bold;
+	font-family : Arial;
+	color : white;
+	background-color	: #00565b;
+}
+
+.clsErrorMsg
+{
+	font-weight : bold;
+	color : red;
+}
+
+.H1
+{
+	font-size: 14pt;
+	font-weight:bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #CC0000;
+}
+
+
+H2
+{
+	font-size: 14pt;
+	font-weight:bold;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	color: #064394;
+
+}
+
+.H3
+{
+	font-size: 9pt;
+	font-weight:bold;
+	font-family: Helvetica, Arial, Sans-serif;
+	color: #CC0000;
+}
+
+.H4
+{
+	font-size: 8pt;
+	font-weight:bold;
+	font-family: Helvetica, Arial, Sans-serif;
+	color: #CC0000;
+}
+
+.H5
+{
+	font-size: 8pt;
+	font-weight:bold;
+	font-family: Helvetica, Arial, Sans-serif;
+	color: #000000;
+}
+
+.clsAsterisk
+{
+	color		: red;
+	font-weight	: bold;
+}
+
+
+#idBtnScrollUp
+{
+	position : absolute;
+	top : 50px;
+	left : 0px;
+	z-index : 100;
+	cursor : hand;
+}
+
+#idBtnScrollDown
+{
+	position : absolute;
+	top : 300px;
+	left : 0px;
+	z-index : 100;
+	cursor : hand;
+}
+
+#idScrollTable
+{
+	position : absolute;
+	top : 0px;
+}
+
+#idUserInfoBg
+{
+	position : absolute;
+	top : 285px;
+	left : 10px;
+	width : 100px;
+}
+
+#idUserInfo
+{
+	position : absolute;
+	top : 300px;
+	left : 10px;
+	font-family : Arial Narrow;
+	font-weight : bold;
+	font-size : 10pt;
+	text-align : center;
+	width : 100px;
+	color : white;
+}
+
+.clsMenuTable
+{
+	position : absolute;
+	top : 50px;
+	left : 0px;
+	height : 250px;
+	width : 120px;
+	z-index : 100;
+	overflow : hidden;
+}
+
+.clsMenuText
+{
+	position : relative;
+	left : 6px;
+	top : -28px;
+	height : 0%;
+	z-order : 1;
+	font-size : 10pt;
+}
+
+.clsMenuBkg
+{
+	position : relative;
+	top : 6px;
+	font-family : arial narrow, arial, verdana;
+	font-size : 10pt;
+	font-weight : bold;
+	text-align : center;
+	color : white;
+	text-decoration : none;
+	cursor : hand;
+	overflow : hidden;
+	height : 32px;
+	width : 120px;
+}
+
+.clsMenuBkgOver
+{
+	position : relative;
+	top : 6px;
+	font-family : arial narrow, arial, verdana;
+	font-weight : bold;
+	font-size : 10pt;
+	text-align : center;
+	color : black;
+	text-decoration : none;
+	cursor : hand;
+	overflow : hidden;
+	height : 32px;
+	width : 120px;
+}
+
+TEXTAREA.FONTCLASS
+{
+	font-size : 8pt;
+	font-family : Arial;
+}
+
+TEXTAREA.NOSCROLLCLASS
+{
+	font-size : 8pt;
+	font-family : Arial;
+	overflow : hidden;
+}
+
+.clsSeparator
+{
+	background-color: #c4e1ff;
+}
+
+.clsTabList
+{
+    BACKGROUND-COLOR: #eeeeee;
+    BORDER-BOTTOM-COLOR: black;
+    BORDER-BOTTOM-WIDTH: 1px;
+    BORDER-LEFT-COLOR: black;
+    BORDER-LEFT-WIDTH: 1px;
+    BORDER-RIGHT-COLOR: black;
+    BORDER-RIGHT-WIDTH: 1px;
+    BORDER-TOP-COLOR: black;
+    BORDER-TOP-WIDTH: 1px;
+    CURSOR: hand;
+    FONT-SIZE: 8pt;
+    MARGIN-LEFT: 2px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-RIGHT: 1px;
+    PADDING-TOP: 1px;
+    TEXT-ALIGN: center
+}
+
+.clsTabListOn
+{
+    BACKGROUND-COLOR: #285FA9;
+    BORDER-BOTTOM-COLOR: black;
+    BORDER-BOTTOM-WIDTH: 0px;
+    BORDER-LEFT-COLOR: black;
+    BORDER-LEFT-WIDTH: 1px;
+    BORDER-RIGHT-COLOR: black;
+    BORDER-RIGHT-WIDTH: 1px;
+    BORDER-TOP-COLOR: black;
+    BORDER-TOP-WIDTH: 1px;
+    COLOR: white;
+    CURSOR: hand;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold;
+    MARGIN-LEFT: 2px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-RIGHT: 1px;
+    PADDING-TOP: 1px;
+    TEXT-ALIGN: center
+}
+
+.clsLinkSelected
+{
+    COLOR: white;
+    TEXT-DECORATION: none
+}
+
+.show {
+	visibility: visible;
+	display: block;
+}
+.hide {
+	visibility: hidden;
+	display: none;
+}
+.aktif {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding:2px;
+	border-left:1px solid #666666;
+	border-right:1px solid #666666;
+	border-top:1px solid #666666;
+	text-decoration:none;
+	color: #000000;
+	background-color:#FFFFFF;
+	font-weight:bolder;
+	xcursor:pointer;
+	xcursor:hand;
+}
+.pasif {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding:3px;
+	border:0px solid #ffffff;
+	color: #000000;
+	background-color: transparant;
+	cursor:pointer;
+	cursor:hand;
+}
+
+
+.bgVLGray {
+	background-color: #EEEEEE;
+}
+.bgLGray {
+	background-color: #CCCCCC;
+}
+.bgDGray {
+	background-color: #999999;
+}
+.fontHeader {
+	font-size: x-large;
+	font-weight: bold;
+}
+.trButton {
+	height: 56px;
+}
+
+.tdbord {
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #CCCCCC;
+	border-right: 1px solid #ffffff;
+}
+.tdbord1 {
+	background-color: #EEEEEE;
+	border-bottom: 1px solid #CCCCCC;
+	border-right: 1px solid #ffffff;
+}
+
+.tab-group
+{
+    border: 0;
+    border-color : #CCCCCC;
+}
+
+.clsHeaderTabListOn
+{
+	BACKGROUND-COLOR: #D6D6D6;
+	COLOR: #003399;
+	CURSOR: hand;
+	FONT-SIZE: 9pt;
+	FONT-WEIGHT: bold;
+	MARGIN-LEFT: 2px;
+	PADDING-BOTTOM: 1px;
+	PADDING-LEFT: 1px;
+	PADDING-RIGHT: 1px;
+	PADDING-TOP: 1px;
+	TEXT-ALIGN: center;
+	border: 1px none #C7D7EF;
+	vertical-align: middle;
+	background: url("../common/image/tabon.jpg");
+}
+
+.clsHeaderTabListOff
+{
+	BACKGROUND-COLOR: #D6D6D6;
+	COLOR: #003399;
+	CURSOR: hand;
+	FONT-SIZE: 9pt;
+	FONT-WEIGHT: bold;
+	MARGIN-LEFT: 2px;
+	PADDING-BOTTOM: 1px;
+	PADDING-LEFT: 1px;
+	PADDING-RIGHT: 1px;
+	PADDING-TOP: 1px;
+	TEXT-ALIGN: center;
+	border: 1px none #C7D7EF;
+	vertical-align: middle;
+	background: url("../common/image/taboff.jpg");
+}
+
+.clsHeaderLongTabListOn
+{
+	BACKGROUND-COLOR: #D6D6D6;
+	COLOR: #003399;
+	CURSOR: hand;
+	FONT-SIZE: 9pt;
+	FONT-WEIGHT: bold;
+	MARGIN-LEFT: 2px;
+	PADDING-BOTTOM: 1px;
+	PADDING-LEFT: 1px;
+	PADDING-RIGHT: 1px;
+	PADDING-TOP: 1px;
+	TEXT-ALIGN: center;
+	border: 1px none #C7D7EF;
+	vertical-align: middle;
+	background: url("../common/image/tabonGST.jpg");
+}
+
+.clsHeaderLongTabListOff
+{
+	BACKGROUND-COLOR: #D6D6D6;
+	COLOR: #003399;
+	CURSOR: hand;
+	FONT-SIZE: 9pt;
+	FONT-WEIGHT: bold;
+	MARGIN-LEFT: 2px;
+	PADDING-BOTTOM: 1px;
+	PADDING-LEFT: 1px;
+	PADDING-RIGHT: 1px;
+	PADDING-TOP: 1px;
+	TEXT-ALIGN: center;
+	border: 1px none #C7D7EF;
+	vertical-align: middle;
+	background: url("../common/image/taboff.jpg");
+}
+
+.clsTableCenter
+{
+	font-family : Arial;
+	font-weight : bold;
+	color : #000000;
+	background-color: #A1BBE4;
+	TEXT-ALIGN: center;
+}
+
+.clsTableHeader
+{
+	font-family : Arial;
+	font-weight : bold;
+	color : #000000;
+	background-color: #9E9E9E;
+}
+
+.clsSuccessfull
+{
+	font-family : Arial;
+	font-weight : bold;
+	color : red;
+	background-color: #EAEEF7;
+}
+
+/*****************************************************************************************************************/
+body {
+	background-color : white;
+}
+
+table {
+	border-spacing : 0px;
+}
+
+tr {
+	vertical-align : text-top;
+}
+
+td {
+	font-size : 8pt;
+	font-family : Arial;
+	padding-left : 5px;
+	padding-right : 0.5cm;
+}
+
+.clsTableSubHeader {
+    width : 100%;
+    height: 20px;
+    border-collapse: collapse;
+}
+
+.clsSubHeader {
+	font-size : 8pt;
+	font-weight : normal;
+	font-family : Arial;
+	color : #FFFFFF;
+	font-weight : bold;
+	background-color : #AB1F19;
+	vertical-align : middle;
+}
+
+.clsForm {
+	margin : 0px;
+	/*padding : 3;*/
+	border-spacing: 1px;
+	background-color : #FFFFFF;
+    border: 0;
+    width : 100%;
+}
+.clsForm5 {
+	margin : 0px;
+	/*padding : 3;*/
+	border-spacing: 0px;
+	background-color : #FFFFFF;
+    border: 0;
+    width : 100%;
+}
+
+.clsEven {
+	font-family : Arial;
+	color : #000000;
+	background-color: #f3ebe8;
+}
+
+.clsMandatory {
+	font-family : Arial;
+    font-weight : bold;
+    color : #000000;
+	background-color: #f3ebe8;
+}
+
+.clsTable {
+	font-family : Arial;
+	font-weight : bold;
+	color : #000000;
+	background-color: #E5A49D;
+}
+
+.clsAprismaTable {
+    margin : 0px;
+	border-spacing: 1px;
+    border: 0;
+    width : 100%;
+    font-family : Arial;
+	color : #000000;
+	background-color: #FFFFFF;
+}
+
+.clsWidth {
+    width : 100%;
+}
+
+.clsAlignRight {
+    text-align: right;
+}
+
+.clsButton{
+	text-align: right;
+}
+
+
+
+/*****************************************************************************************************************/
+.clsMrgin {
+	font-family : Arial;
+	color : #000000;
+	background-color: #E5A49D;	
+}
+#NONBOLD
+{
+	font-family : ARIAL;
+	font-size : 8pt;
+}
+#BOLD
+{
+	font-family : ARIAL;
+	font-size : 8pt;
+	font-weight : bold;
+	text-decoration: underline;
+}
+#NOTIFEMAIL
+{
+	font-family : ARIAL;
+	font-size : 7.5pt;
+	font-style: italic;
+}
+ 
+#BOLDS
+{
+	font-family : ARIAL;
+	font-size : 12pt;
+	font-weight : bold;
+	font-style: italic;
+}
+
+#BOLDS2
+{
+	font-family : sans-serif;
+	font-size : 9pt;
+	font-weight : bold;
+	font-style: italic;
+	color: 666666;
+}
+
+#BOLDS3
+{
+	font-family : sans-serif;
+	font-size : 8pt;
+	font-weight : bold;
+	font-style: italic;
+	color: 666666;
+}
+
+#loader{
+	display:none;
+}
+
+.opacity10 {
+  width:120%;
+  height:1100px;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=30);
+
+  /* Netscape */
+  -moz-opacity: 0.3;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.3;
+
+  /* Good browsers */
+  opacity: 0.3;
+  
+  position: absolute;
+  top:0;  
+  left: 0;
+  z-index: 99999; 
+  background-color:#cccccc;
+}
+
+.popUp{
+    background-color:#4c4c4c;
+    font-size:12px;
+    display:inline;
+    z-index:2;
+    position:absolute;
+    /* margin-top:-100px;*/
+    margin-left:10px;
+    color:white;
+    padding: 4px 5px 4px 5px;
+    width:192px;
+    border-radius:6px;
+}
+
+.popUpDisappear{
+    display:none;
+}
+
+.wordWrap-wordBreak {
+    word-wrap:break-word;
+    word-break:break-all;
+}
+
+.wordWrap-wordBreak-break-word {
+    word-wrap:break-word;
+    word-break:break-word;
+}
+
+.wordWrap-wordBreak-normal {
+    word-wrap: normal;
+    word-break: normal;
+}

@@ -1,0 +1,5 @@
+tbody td{ text-align:center;}
+tbody button{ margin-left:3px; margin-right:3px;}
+thead tr th{ text-align:center; background-color:#3c8dbc;color:White;}
+#d_tip_1,#d_tip_2{margin-right:8px;}
+.data_idx,.data_RowNum{ cursor:pointer;}
