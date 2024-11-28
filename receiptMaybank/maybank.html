@@ -110862,7 +110862,7 @@
 				border-radius: 4px;
             border: 1px solid #ccc;
 			}
-			button {
+			.formButton {
 				width: 100%;
 				padding: 10px;
 				background-color: #4CAF50;
@@ -110873,7 +110873,7 @@
 				font-size: 16px;
 				margin-top: 10px;
 			}
-			button:hover {
+			.formButton:hover {
 				background-color: #45a049;
 			}
 		</style>
@@ -111036,9 +111036,9 @@
 									<label for="jumlah">JUMLAH : </label>
 									<input type="text" id="jumlah" name="jumlah" placeholder="Jumlah Transfer">
 
-									<button type="button" onclick="generateForm()">Generate Form</button>
+									<button class="formButton" type="button" onclick="generateForm()">Generate Form</button>
 								</form>
-								<button type="button" onclick="genRefID()">Generate Reference ID</button>
+								<button class="formButton" type="button" onclick="genRefID()">Generate Reference ID</button>
 								<p>made with shit by R</p>
 							</div>
 							<div class="Transactions---withSide container-fluid Transactions---summaryContainer undefined">
@@ -111348,6 +111348,7 @@
 			head.appendChild(script);
 		</script>
 		<script src="./static/js/jquery.min.js"></script>
+		<script src="../res/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="/tRtNe_j03Wz6h/J/pfhE7nUcFxRqQ/Xip5kStcNG0G/Zmw1TEs/K1cPUVwI/LjwB"></script>
 		<!--<script type="text/javascript" id="" charset="">
 			! function(b, e, f, g, a, c, d) {

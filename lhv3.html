@@ -42,7 +42,7 @@
             border-radius: 4px;
             border: 1px solid #ccc;
         }
-        button {
+        .formButton {
             width: 100%;
             padding: 10px;
             background-color: #4CAF50;
@@ -53,7 +53,7 @@
             font-size: 16px;
             margin-top: 10px;
         }
-        button:hover {
+        .formButton:hover {
             background-color: #45a049;
         }
         #reportOutput {
@@ -135,14 +135,14 @@
                 <label for="reportDate">DATE (dd/mm/yyyy): </label>
                 <input type="text" id="reportDate" name="reportDate">
 
-                <button type="button" onclick="generateReport()">Generate Report</button>
+                <button class="formButton" type="button" onclick="generateReport()">Generate Report</button>
             </form>
         </div>
 
         <div class="report-container">
             <h2>Generated Report</h2>
             <div id="reportOutput"></div>
-            <button onclick="copyToClipboard()">Copy Report</button>
+            <button class="formButton" onclick="copyToClipboard()">Copy Report</button>
         </div>
     </div>
 	

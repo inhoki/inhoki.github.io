@@ -18,14 +18,14 @@ select, input[type="number"] {
 	border-radius: 4px;
 	border: 1px solid #ccc;
 }
-button:disabled,
-button[disabled]{
+.formButton:disabled,
+.formButton[disabled]{
 	border: 1px solid #999999;
 	background-color: #cccccc;
 	color: #666666;
 	text-decoration: line-through;
 }
-button {
+.formButton {
 	width: 100%;
 	padding: 10px;
 	background-color: #4CAF50;
@@ -35,7 +35,7 @@ button {
 	cursor: pointer;
 	font-size: 16px;
 }
-button:hover:not([disabled]) {
+.formButton:hover:not([disabled]) {
 	background-color: #45a049;
 }
 .mb8 {
