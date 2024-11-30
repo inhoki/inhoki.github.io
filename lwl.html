@@ -27,8 +27,11 @@
         }
         .form-group input,
         .form-group select {
-            width: 100%;
+			width: calc(100% - 16px);
             padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
             box-sizing: border-box;
         }
         .submit-btn, .copy-btn {
@@ -44,6 +47,24 @@
         .submit-btn:hover, .copy-btn:hover {
             background-color: #45a049;
         }
+		.row-rc {
+			display: flex;
+		}
+		.column-25 {
+			flex: 25%;
+		}
+		.column-20 {
+			flex: 20%;
+		}
+		.column-50 {
+			flex: 50%;
+		}
+		.column-75 {
+			flex: 75%;
+		}
+		.column-80 {
+			flex: 80%;
+		}
         #report {
             margin-top: 30px;
             white-space: pre-line;
@@ -71,6 +92,9 @@
                 <li>
                     <a href="/">Home</a>
                 </li>
+				<li>
+                    <a href="/log">Change Log</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -80,50 +104,52 @@
     <h2>Laporan Team</h2>
     <form id="reportForm">
         <div class="form-group">
-            <label for="team">Select Team:</label>
-            <select id="team" name="team">
-                <option value="HOKI88">HOKI88</option>
-                <option value="MALAY888">MALAY888</option>
-                <option value="DRAGON1131">DRAGON1131</option>
-                <option value="MEGABET88">MEGABET88</option>
-                <option value="DEWAMALAY88">DEWAMALAY88</option>
-                <option value="NAGA1131">NAGA1131</option>
-				<option value="LACOSTE128">LACOSTE128</option>
-            </select>
+			<div class="row-rc">
+				<div class="column-50">
+					<label for="shift">Shift (Pagi / Malam):</label>
+					<select id="shift" name="shift">
+						<option value="1">Pagi</option>
+						<option value="2">Malam</option>
+					</select>
+				</div>
+				<div class="column-50">
+					<label for="team">Select Team:</label>
+					<select id="team" name="team">
+						<option value="HOKI88">HOKI88</option>
+						<option value="MALAY888">MALAY888</option>
+						<option value="DRAGON1131">DRAGON1131</option>
+						<option value="MEGABET88">MEGABET88</option>
+						<option value="DEWAMALAY88">DEWAMALAY88</option>
+						<option value="NAGA1131">NAGA1131</option>
+						<option value="LACOSTE128">LACOSTE128</option>
+					</select>
+				</div>
+			</div>
         </div>
-
-        <div class="form-group">
-            <label for="shift">Shift (1 or 2):</label>
-            <select id="shift" name="shift">
-                <option value="1">Shift 1</option>
-                <option value="2">Shift 2</option>
-            </select>
-        </div>
-
         <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
         </div>
         <div class="form-group">
-            <label for="value15">Input number for <15%>:</label>
-			<input type="number" id="value15" name="value15" placeholder="Enter a number for 15%" required>
+			<div class="row-rc">
+				<div class="column-25">
+					<label for="value15">Agent <15%>:</label>
+					<input type="number" id="value15" name="value15" placeholder="15%" required>
+				</div>
+				<div class="column-25">
+					<label for="value18">Agent <18%>:</label>
+					<input type="number" id="value18" name="value18" placeholder="18%" required>
+				</div>
+				<div class="column-25">
+					<label for="value19">Agent <19%>:</label>
+					<input type="number" id="value19" name="value19" placeholder="19%" required>
+				</div>
+				<div class="column-25">
+					<label for="value20">Agent <20%>:</label>
+					<input type="number" id="value20" name="value20" placeholder="20%" required>
+				</div>
+			</div>
         </div>
-
-        <div class="form-group">
-            <label for="value18">Input number for <18%>:</label>
-            <input type="number" id="value18" name="value18" placeholder="Enter a number for 18%" required>
-        </div>
-
-        <div class="form-group">
-            <label for="value19">Input number for <19%>:</label>
-            <input type="number" id="value19" name="value19" placeholder="Enter a number for 19%" required>
-        </div>
-
-        <div class="form-group">
-            <label for="value20">Input number for <20%>:</label>
-            <input type="number" id="value20" name="value20" placeholder="Enter a number for 20%" required>
-        </div>
-
         <button type="button" class="submit-btn" onclick="generateReport()">Submit Report</button>
         <button type="button" class="copy-btn" onclick="copyReport()">Copy Report</button>
     </form>

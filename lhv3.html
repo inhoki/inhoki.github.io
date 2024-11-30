@@ -56,6 +56,15 @@
         .formButton:hover {
             background-color: #45a049;
         }
+		.row-rc {
+			display: flex;
+		}
+		.column-2 {
+			flex: 50%;
+		}
+		.column-4 {
+			flex: 25%;
+		}
         #reportOutput {
             white-space: pre-wrap; /* Keeps formatting in the report */
             font-family: monospace; /* Monospace for better readability */
@@ -85,6 +94,9 @@
                     <li>
                         <a href="/">Home</a>
                     </li>
+					<li>
+						<a href="/log">Change Log</a>
+					</li>
                 </ul>
             </div>
         </div>
@@ -94,44 +106,57 @@
 			<div class="alert alert-info" role="alert"><strong>Info</strong> untuk saat ini team yang ada masih belum lengkap</div>
             <h1>Laporan Harian</h1>
             <form id="cashierForm">
-                <label for="shiftTime">Shift Time (Pagi/Malam): </label>
-                <select id="shiftTime" name="shiftTime">
-                    <option value="PAGI">PAGI</option>
-                    <option value="MALAM">MALAM</option>
-                </select>
-
-                <label for="teamName">Nama Team (Pagi/Malam): </label>
-                <select id="teamName" name="teamName">
-                    <option value="HOKI88">HOKI88</option>
-                    <option value="MALAY88">MALAY888</option>
-                    <option value="MEGABET88">MEGABET88</option>
-                    <option value="DRAGON1131">DRAGON1131</option>
-                    <option value="NAGA1131">NAGA1131</option>
-                    <option value="DEWAMALAY88">DEWAMALAY88</option>
-					<option value="LACOSTE128">LACOSTE128</option>
-                </select>
-
-                <label for="nameCoding">Name: </label>
+				<div class="row-rc">
+					<div class="column-2">
+						<label for="shiftTime">Shift Time (Pagi/Malam): </label>
+						<select id="shiftTime" name="shiftTime">
+							<option value="PAGI">PAGI</option>
+							<option value="MALAM">MALAM</option>
+						</select>
+					</div>
+					<div class="column-2">
+						<label for="teamName">Nama Team: </label>
+						<select id="teamName" name="teamName">
+							<option value="HOKI88">HOKI88</option>
+							<option value="MALAY88">MALAY888</option>
+							<option value="MEGABET88">MEGABET88</option>
+							<option value="DRAGON1131">DRAGON1131</option>
+							<option value="NAGA1131">NAGA1131</option>
+							<option value="DEWAMALAY88">DEWAMALAY88</option>
+							<option value="LACOSTE128">LACOSTE128</option>
+						</select>
+					</div>
+				</div>
+				<label for="nameCoding">Name: </label>
                 <input type="text" id="nameCoding" name="nameCoding" placeholder="Enter Your Name">
-
-                <label for="bankIn">BANK IN (+): </label>
-                <input type="text" id="bankIn" name="bankIn" placeholder="Enter Bank In Amount">
-
-                <label for="bankOut">BANK OUT (-): </label>
-                <input type="text" id="bankOut" name="bankOut" placeholder="Enter Bank Out Amount">
-
-                <label for="jumlahTransaksi">JUMLAH TRANSAKSI: </label>
-                <input type="text" id="jumlahTransaksi" name="jumlahTransaksi" placeholder="Enter Number of Transactions">
-
-                <label for="newMember">NEW MEMBER: </label>
-                <input type="text" id="newMember" name="newMember" placeholder="Enter New Members Count">
-
-                <label for="waMasuk">WA MASUK: </label>
-                <input type="text" id="waMasuk" name="waMasuk" placeholder="Enter WA Masuk Count">
-
-                <label for="telegram">TELEGRAM: </label>
-                <input type="text" id="telegram" name="telegram" placeholder="Enter Telegram Count">
-
+				<div class="row-rc">
+					<div class="column-2">
+						<label for="bankIn">BANK IN (+): </label>
+						<input type="text" id="bankIn" name="bankIn" placeholder="Enter Bank In Amount">
+					</div>
+					<div class="column-2">
+						<label for="bankOut">BANK OUT (-): </label>
+						<input type="text" id="bankOut" name="bankOut" placeholder="Enter Bank Out Amount">
+					</div>
+				</div>
+				<div class="row-rc">
+					<div class="column-4">
+						<label for="jumlahTransaksi">TRANSAKSI: </label>
+						<input type="text" id="jumlahTransaksi" name="jumlahTransaksi" placeholder="Enter Number of Transactions">
+					</div>
+					<div class="column-4">
+						<label for="newMember">NEW MEMBER: </label>
+						<input type="text" id="newMember" name="newMember" placeholder="Enter New Members Count">
+					</div>
+					<div class="column-4">
+						<label for="waMasuk">WA MASUK: </label>
+						<input type="text" id="waMasuk" name="waMasuk" placeholder="Enter WA Masuk Count">
+					</div>
+					<div class="column-4">
+						<label for="telegram">TELE MASUK: </label>
+						<input type="text" id="telegram" name="telegram" placeholder="Enter Telegram Count">
+					</div>
+				</div>
                 <label for="reportDate">DATE (dd/mm/yyyy): </label>
                 <input type="text" id="reportDate" name="reportDate">
 

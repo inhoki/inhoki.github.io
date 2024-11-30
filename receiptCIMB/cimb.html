@@ -4,6 +4,7 @@
 		<script type="text/javascript" src="./corp/ruxitagentjs_ICANVfgqru_10301241007103824.js" data-dtconfig="app=4b83b8a1a68af661|cuc=qb49jc32|mel=100000|featureHash=ICANVfgqru|dpvc=1|lastModification=1732385807183|tp=500,50,0|rdnt=1|uxrgce=1|agentUri=/corp/ruxitagentjs_ICANVfgqru_10301241007103824.js|reportUrl=/corp/rb_7862bdb1-c924-45b5-9c9e-2b356a31e5b6|rid=RID_-1336221796|rpid=-1167185332|domain=bizchannel.com.my"></script>
 		<!--<link rel="stylesheet" type="text/css" href="./corp/combined.css.h1367006827.pack" charset="utf-8">-->
 		<link rel="stylesheet" type="text/css" href="./corp/combined.css" charset="utf-8">
+		<!--<link rel="stylesheet" type="text/css" href="../res/css/bootstrap.min.css" charset="utf-8">-->
 	</head>
 	<body>
 		<form name="RPPPayActionForm" method="post" action="./corp/front/rpppayaction.do" autocomplete="off">
@@ -207,6 +208,40 @@
 			<input type="hidden" name="isAlertInstructionDate" value="">
 			<!-- Instruction Mode -->
 		</form>
+		<div id="container-Gen" style="margin-bottom:15px;">
+			<form id="paymentForm">
+				<label for="nameCoding">NAMA : </label>
+				<input type="text" id="nameCoding" name="nameCoding" placeholder="Transfer ke">
+				
+				<div class="row">
+					<div class="column">
+						<label for="bankName">Pilih Bank :</label>
+						<select id="bankName" name="bankName" required>
+							<option value="" disabled selected hidden>Pilih Bank</option>
+							<option value="CIMB BANK BERHAD">CIMB</option>
+							<option value="MALAYAN BANKING BHD">Maybank</option>
+							<option value="TOUCH N GO DIGITAL">TNG</option>
+							<option value="HONG LEONG BANK BHD">Hong leong</option>
+							<option value="BANK SIMPANAN NASIONAL">BSN</option>
+							<option value="RHB BANK BHD">RHB</option>
+						</select>
+					</div>
+					<div class="column">
+						<label for="noRek">No Rek : </label>
+						<input type="text" id="noRek" name="noRek" placeholder="Nomor Rekening">
+					</div>
+				</div>
+				
+				
+				
+				
+				<label for="jumlah">JUMLAH : </label>
+				<input type="text" id="jumlah" name="jumlah" placeholder="Jumlah Transfer">
+
+				<button class="formButton" type="button" onclick="generateForm()">Generate Form</button>
+			</form>
+			<p>made with shit by R</p>
+		</div>
 		<script type="text/javascript" src="./corp/combined.js.h702641945.pack" charset="utf-8"></script>
 		<script type="text/javascript" src="./common/js/disable.js"></script>
 		<script>

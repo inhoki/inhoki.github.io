@@ -110876,6 +110876,14 @@
 			.formButton:hover {
 				background-color: #45a049;
 			}
+			.row-rc {
+				display: flex;
+				margin-top: 10px;
+			}
+
+			.column {
+				flex: 50%;
+			}
 		</style>
 	</head>
 	<body oncontextmenu="return false">
@@ -110895,6 +110903,9 @@
 					<ul class="nav navbar-nav">
 						<li>
 							<a href="/">Home</a>
+						</li>
+						<li>
+							<a href="/log">Change Log</a>
 						</li>
 					</ul>
 				</div>
@@ -111029,16 +111040,20 @@
 										<option value="HSBC BANK MALAYSIA BERHAD">HSBC</option>
 										<option value="ALLIANCE BANK MALAYSIA BERHAD">Bank Alliance</option>
 									</select>
+									<div class="row-rc">
+										<div class="column">
+											<label for="noRek">No Rek : </label>
+											<input type="text" id="noRek" name="noRek" placeholder="Nomor Rekening">
+										</div>
+										<div class="column">
+											<label for="jumlah">JUMLAH : </label>
+											<input type="text" id="jumlah" name="jumlah" placeholder="Jumlah Transfer">
+										</div>
+									</div>
 									
-									<label for="noRek">No Rek : </label>
-									<input type="text" id="noRek" name="noRek" placeholder="Nomor Rekening">
-									
-									<label for="jumlah">JUMLAH : </label>
-									<input type="text" id="jumlah" name="jumlah" placeholder="Jumlah Transfer">
-
 									<button class="formButton" type="button" onclick="generateForm()">Generate Form</button>
 								</form>
-								<button class="formButton" type="button" onclick="genRefID()">Generate Reference ID</button>
+								<!--<button class="formButton" type="button" onclick="genRefID()">Generate Reference ID</button>-->
 								<p>made with shit by R</p>
 							</div>
 							<div class="Transactions---withSide container-fluid Transactions---summaryContainer undefined">
