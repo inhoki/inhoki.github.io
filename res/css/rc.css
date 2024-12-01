@@ -119,3 +119,22 @@
 .toast.invalid .close-btn i {
     color: #666;
 }
+
+.row-rc {
+	display: flex;
+}
+.column-25 {
+	flex: 25%;
+}
+.column-20 {
+	flex: 20%;
+}
+.column-50 {
+	flex: 50%;
+}
+.column-75 {
+	flex: 75%;
+}
+.column-80 {
+	flex: 80%;
+}

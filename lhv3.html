@@ -128,39 +128,39 @@
 					</div>
 				</div>
 				<label for="nameCoding">Name: </label>
-                <input type="text" id="nameCoding" name="nameCoding" placeholder="Enter Your Name">
+                <input class="tab-cell" type="text" id="nameCoding" name="nameCoding" placeholder="Enter Your Name">
 				<div class="row-rc">
 					<div class="column-2">
 						<label for="bankIn">BANK IN (+): </label>
-						<input type="text" id="bankIn" name="bankIn" placeholder="Enter Bank In Amount">
+						<input class="tab-cell" type="text" id="bankIn" name="bankIn" placeholder="Enter Bank In Amount">
 					</div>
 					<div class="column-2">
 						<label for="bankOut">BANK OUT (-): </label>
-						<input type="text" id="bankOut" name="bankOut" placeholder="Enter Bank Out Amount">
+						<input class="tab-cell" type="text" id="bankOut" name="bankOut" placeholder="Enter Bank Out Amount">
 					</div>
 				</div>
 				<div class="row-rc">
 					<div class="column-4">
 						<label for="jumlahTransaksi">TRANSAKSI: </label>
-						<input type="text" id="jumlahTransaksi" name="jumlahTransaksi" placeholder="Enter Number of Transactions">
+						<input class="tab-cell" type="text" id="jumlahTransaksi" name="jumlahTransaksi" placeholder="Enter Number of Transactions">
 					</div>
 					<div class="column-4">
 						<label for="newMember">NEW MEMBER: </label>
-						<input type="text" id="newMember" name="newMember" placeholder="Enter New Members Count">
+						<input class="tab-cell" type="text" id="newMember" name="newMember" placeholder="Enter New Members Count">
 					</div>
 					<div class="column-4">
 						<label for="waMasuk">WA MASUK: </label>
-						<input type="text" id="waMasuk" name="waMasuk" placeholder="Enter WA Masuk Count">
+						<input class="tab-cell" type="text" id="waMasuk" name="waMasuk" placeholder="Enter WA Masuk Count">
 					</div>
 					<div class="column-4">
 						<label for="telegram">TELE MASUK: </label>
-						<input type="text" id="telegram" name="telegram" placeholder="Enter Telegram Count">
+						<input class="enter-cell" type="text" id="telegram" name="telegram" placeholder="Enter Telegram Count">
 					</div>
 				</div>
-                <label for="reportDate">DATE (dd/mm/yyyy): </label>
-                <input type="text" id="reportDate" name="reportDate">
+                <!--<label for="reportDate">DATE (dd/mm/yyyy): </label>
+                <input type="text" id="reportDate" name="reportDate">-->
 
-                <button class="formButton" type="button" onclick="generateReport()">Generate Report</button>
+                <button class="formButton" type="button" id="btnGenerate" onclick="generateReport()">Generate Report</button>
             </form>
         </div>
 
@@ -179,8 +179,6 @@
             return num.toLocaleString(locale);
         }
 
-        // Automatically populate the date field with today's date
-        document.getElementById('reportDate').value = new Date().toLocaleDateString('en-GB');
 
         function generateReport() {
             //const shiftNumber = document.getElementById('shiftNumber').value;
@@ -193,7 +191,7 @@
             const newMember = document.getElementById('newMember').value || 0;
             const waMasuk = document.getElementById('waMasuk').value || 0;
             const telegram = document.getElementById('telegram').value || 0;
-            const reportDate = document.getElementById('reportDate').value;
+            const reportDate = new Date().toLocaleDateString('en-GB');
 
             // Calculate total automatically
             const total = bankIn - bankOut;
@@ -222,6 +220,17 @@ TELEGRAM: ${formatNumber(telegram)}`;
                 alert('Failed to copy report: ', err);
             });
         }
+		$(".tab-cell").keyup(function(event){
+			if(event.keyCode == 13){
+				var index = $(this).index("input");          
+				$("input").eq(index + 1).focus(); 
+			}
+		});
+		$(".enter-cell").keyup(function(event){
+			if(event.keyCode == 13){
+				$("#btnGenerate").click();
+			}
+		});
     </script>
 </body>
 </html>

@@ -38,6 +38,12 @@ select, input[type="number"] {
 .formButton:hover:not([disabled]) {
 	background-color: #45a049;
 }
+#btnToggleSetScore {
+	background-color: #3686ff;
+}
+#btnToggleSetScore:hover:not([disabled]) {
+	background-color: #1c68d9;
+}
 .mb8 {
 	margin-bottom: 8px;
 }
@@ -52,7 +58,7 @@ select, input[type="number"] {
     padding: 20px;
 }
 .toast {
-    width: 350px;
+    min-width: 350px;
     height: 80px;
     background: rgba(56, 60, 64, 0.9);
 	border-radius: 10px 10px 10px 0px;
@@ -131,4 +137,22 @@ select, input[type="number"] {
 .toast.error .close-btn i,
 .toast.invalid .close-btn i {
     color: #666;
+}
+.row-rc {
+	display: flex;
+}
+.column-25 {
+	flex: 25%;
+}
+.column-20 {
+	flex: 20%;
+}
+.column-50 {
+	flex: 50%;
+}
+.column-75 {
+	flex: 75%;
+}
+.column-80 {
+	flex: 80%;
 }
