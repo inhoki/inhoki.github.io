@@ -128,29 +128,29 @@
         </div>
         <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <input class="tab-cell" type="text" id="name" name="name" placeholder="Enter your name" required>
         </div>
         <div class="form-group">
 			<div class="row-rc">
 				<div class="column-25">
 					<label for="value15">Agent <15%>:</label>
-					<input type="number" id="value15" name="value15" placeholder="15%" required>
+					<input class="tab-cell" type="number" id="value15" name="value15" placeholder="15%" required>
 				</div>
 				<div class="column-25">
 					<label for="value18">Agent <18%>:</label>
-					<input type="number" id="value18" name="value18" placeholder="18%" required>
+					<input class="tab-cell" type="number" id="value18" name="value18" placeholder="18%" required>
 				</div>
 				<div class="column-25">
 					<label for="value19">Agent <19%>:</label>
-					<input type="number" id="value19" name="value19" placeholder="19%" required>
+					<input class="tab-cell" type="number" id="value19" name="value19" placeholder="19%" required>
 				</div>
 				<div class="column-25">
 					<label for="value20">Agent <20%>:</label>
-					<input type="number" id="value20" name="value20" placeholder="20%" required>
+					<input class="enter-cell" type="number" id="value20" name="value20" placeholder="20%" required>
 				</div>
 			</div>
         </div>
-        <button type="button" class="submit-btn" onclick="generateReport()">Submit Report</button>
+        <button type="button" class="submit-btn" id="btnGenerate" onclick="generateReport()">Submit Report</button>
         <button type="button" class="copy-btn" onclick="copyReport()">Copy Report</button>
     </form>
 
@@ -218,6 +218,19 @@ TOTAL: ${plusMinusNum(total)}`;
             alert("Failed to copy: ", err);
         });
     }
+	
+	
+	$(".tab-cell").keyup(function(event){
+		if(event.keyCode == 13){
+			var index = $(this).index("input");          
+			$("input").eq(index + 1).focus(); 
+		}
+	});
+	$(".enter-cell").keyup(function(event){
+		if(event.keyCode == 13){
+			$("#btnGenerate").click();
+		}
+	});
 </script>
 </body>
 </html>

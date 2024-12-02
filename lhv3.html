@@ -103,7 +103,6 @@
     </nav>
     <div id="container">
         <div class="form-container">
-			<div class="alert alert-info" role="alert"><strong>Info</strong> untuk saat ini team yang ada masih belum lengkap</div>
             <h1>Laporan Harian</h1>
             <form id="cashierForm">
 				<div class="row-rc">
@@ -140,19 +139,21 @@
 					</div>
 				</div>
 				<div class="row-rc">
-					<div class="column-4">
+					<div class="column-2">
 						<label for="jumlahTransaksi">TRANSAKSI: </label>
 						<input class="tab-cell" type="text" id="jumlahTransaksi" name="jumlahTransaksi" placeholder="Enter Number of Transactions">
 					</div>
-					<div class="column-4">
+					<div class="column-2">
 						<label for="newMember">NEW MEMBER: </label>
 						<input class="tab-cell" type="text" id="newMember" name="newMember" placeholder="Enter New Members Count">
 					</div>
-					<div class="column-4">
+				</div>
+				<div class="row-rc">
+					<div class="column-2">
 						<label for="waMasuk">WA MASUK: </label>
 						<input class="tab-cell" type="text" id="waMasuk" name="waMasuk" placeholder="Enter WA Masuk Count">
 					</div>
-					<div class="column-4">
+					<div class="column-2">
 						<label for="telegram">TELE MASUK: </label>
 						<input class="enter-cell" type="text" id="telegram" name="telegram" placeholder="Enter Telegram Count">
 					</div>
@@ -166,6 +167,7 @@
 
         <div class="report-container">
             <h2>Generated Report</h2>
+			<div class="alert alert-info" role="alert"><strong>Info</strong> untuk saat ini team yang ada masih belum lengkap</div>
             <div id="reportOutput"></div>
             <button class="formButton" onclick="copyToClipboard()">Copy Report</button>
         </div>
