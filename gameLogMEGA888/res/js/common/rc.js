@@ -4,8 +4,9 @@ var options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digi
 var endMoney = 0;
 var beginMoney = 0;
 const toastBox = document.querySelector('.toastBox');
+const jpName = "红包/彩金";
 
-const gameList = {"games": [{"vGameName": "Agent 51", "valueName": "Agent51"}, {"vGameName": "Alice", "valueName": "Alice"}, {"vGameName": "Banana Monkey", "valueName": "BananaMonkey"}, {"vGameName": "Big Prosperity", "valueName": "BigProsperity"}, {"vGameName": "Big Shot", "valueName": "BigShot"}, {"vGameName": "Bonus Bears", "valueName": "BonusBears"}, {"vGameName": "Boxing", "valueName": "Boxing"}, {"vGameName": "Boy King", "valueName": "Boyking"}, {"vGameName": "Cai Shen Gold", "valueName": "CaiShenGold"}, {"vGameName": "Clash Of The Beasts", "valueName": "ClashOfTheBeasts"}, {"vGameName": "DeepTrek", "valueName": "DeepTrek"}, {"vGameName": "Dolphin Reef", "valueName": "DolphinReef"}, {"vGameName": "Dragon Gold", "valueName": "Dragon Gold"}, {"vGameName": "Dragon Hero", "valueName": "DragonHero"}, {"vGameName": "Elven Magic", "valueName": "ElvenMagic"}, {"vGameName": "Emperor Gate", "valueName": "EmperorGate"}, {"vGameName": "Fairy Garden", "valueName": "FairyGarden"}, {"vGameName": "Floating Dragon", "valueName": "FloatingDragon"}, {"vGameName": "Fortune Panda", "valueName": "FortunePanda"}, {"vGameName": "Golden Lotus", "valueName": "Golden Lotus"}, {"vGameName": "Golden Beauty", "valueName": "GoldenBeauty"}, {"vGameName": "Golden Slut", "valueName": "GoldenSlut"}, {"vGameName": "Golden Tour", "valueName": "GoldenTour"}, {"vGameName": "Golden Tree", "valueName": "GoldenTree"}, {"vGameName": "Great 88", "valueName": "Great88"}, {"vGameName": "Great Blue", "valueName": "GreatBlue"}, {"vGameName": "Green Light", "valueName": "Green"}, {"vGameName": "Halloween", "valueName": "Halloween"}, {"vGameName": "Iceland", "valueName": "ICELAND"}, {"vGameName": "Indian Myth", "valueName": "India"}, {"vGameName": "Ireland", "valueName": "IreLand"}, {"vGameName": "Japan", "valueName": "JAPAN"}, {"vGameName": "Laura", "valueName": "Laura"}, {"vGameName": "Lion Dance", "valueName": "LionDance"}, {"vGameName": "Lost Island", "valueName": "Lost Island"}, {"vGameName": "Lotus Legend", "valueName": "LotusLegend"}, {"vGameName": "Lucky Duck", "valueName": "LuckyDuck"}, {"vGameName": "Lucky Little Gods", "valueName": "LuckyLittleGods"}, {"vGameName": "Lucky Neko", "valueName": "LuckyNeko"}, {"vGameName": "King Of Pop (Michael Jackson)", "valueName": "MichaelJackson"}, {"vGameName": "Panda", "valueName": "Panda"}, {"vGameName": "Panther Moon", "valueName": "PatherMoon"}, {"vGameName": "Safari Heat", "valueName": "SAFARI Heat"}, {"vGameName": "Samurai", "valueName": "Samurai"}, {"vGameName": "Sea World", "valueName": "SeaWorld"}, {"vGameName": "Stone Age", "valueName": "Stone Age"}, {"vGameName": "T-Rex", "valueName": "T-REX"}, {"vGameName": "Top Gun", "valueName": "TopGun"}, {"vGameName": "Twister", "valueName": "Twister"}, {"vGameName": "Victory", "valueName": "Victory"}, {"vGameName": "Wild Fireworks", "valueName": "WildFireworks"}, {"vGameName": "Wild Fox", "valueName": "WildFox"}, {"vGameName": "Zombie Carnival", "valueName": "ZombieCarnival"}]}
+const gameList = {"games": [{"vGameName": "Agent 51", "valueName": "Agent51"}, {"vGameName": "Alice", "valueName": "Alice"}, {"vGameName": "Banana Monkey", "valueName": "BananaMonkey"}, {"vGameName": "Big Prosperity", "valueName": "BigProsperity"}, {"vGameName": "Big Shot", "valueName": "BigShot"}, {"vGameName": "Bonus Bears", "valueName": "BonusBears"}, {"vGameName": "Boxing", "valueName": "Boxing"}, {"vGameName": "Boy King", "valueName": "Boyking"}, {"vGameName": "Cai Shen Gold", "valueName": "CaiShenGold"}, {"vGameName": "Chinese New Year", "valueName": "ChineseNewYear"}, {"vGameName": "Clash Of The Beasts", "valueName": "ClashOfTheBeasts"}, {"vGameName": "DeepTrek", "valueName": "DeepTrek"}, {"vGameName": "Dolphin Reef", "valueName": "DolphinReef"}, {"vGameName": "Dragon Gold", "valueName": "Dragon Gold"}, {"vGameName": "Dragon Hero", "valueName": "DragonHero"}, {"vGameName": "Elven Magic", "valueName": "ElvenMagic"}, {"vGameName": "Emperor Gate", "valueName": "EmperorGate"}, {"vGameName": "Fairy Garden", "valueName": "FairyGarden"}, {"vGameName": "Feng Shen", "valueName": "Fengshen"}, {"vGameName": "Floating Dragon", "valueName": "FloatingDragon"}, {"vGameName": "Fortune Fest", "valueName": "FortuneFest"}, {"vGameName": "Fortune Panda", "valueName": "FortunePanda"}, {"vGameName": "Golden Lotus", "valueName": "Golden Lotus"}, {"vGameName": "Golden Beauty", "valueName": "GoldenBeauty"}, {"vGameName": "Golden Slut", "valueName": "GoldenSlut"}, {"vGameName": "Golden Tour", "valueName": "GoldenTour"}, {"vGameName": "Golden Tree", "valueName": "GoldenTree"}, {"vGameName": "Great 88", "valueName": "Great88"}, {"vGameName": "Great Blue", "valueName": "GreatBlue"}, {"vGameName": "Green Light", "valueName": "Green"}, {"vGameName": "Halloween", "valueName": "Halloween"}, {"vGameName": "Halloween Party", "valueName": "HalloweenParty"}, {"vGameName": "Iceland", "valueName": "ICELAND"}, {"vGameName": "Indian Myth", "valueName": "India"}, {"vGameName": "Ireland", "valueName": "IreLand"}, {"vGameName": "Japan", "valueName": "JAPAN"}, {"vGameName": "Jin Qian Wa", "valueName": "JinQianWa"}, {"vGameName": "Laura", "valueName": "Laura"}, {"vGameName": "Lion Dance", "valueName": "Lion Dance"}, {"vGameName": "Lost Island", "valueName": "Lost Island"}, {"vGameName": "Lotus Legend", "valueName": "LotusLegend"}, {"vGameName": "Lucky Duck", "valueName": "LuckyDuck"}, {"vGameName": "Lucky Little Gods", "valueName": "LuckyLittleGods"}, {"vGameName": "Lucky Neko", "valueName": "LuckyNeko"}, {"vGameName": "Masquerade", "valueName": "Masquerade"}, {"vGameName": "King Of Pop (Michael Jackson)", "valueName": "MichaelJackson"}, {"vGameName": "Panda", "valueName": "Panda"}, {"vGameName": "Panther Moon", "valueName": "PatherMoon"}, {"vGameName": "Safari Heat", "valueName": "SAFARI Heat"}, {"vGameName": "Samurai", "valueName": "Samurai"}, {"vGameName": "Sea World", "valueName": "SeaWorld"}, {"vGameName": "Stone Age", "valueName": "Stone Age"}, {"vGameName": "T-Rex", "valueName": "T-REX"}, {"vGameName": "Top Gun", "valueName": "TopGun"}, {"vGameName": "Twister", "valueName": "Twister"}, {"vGameName": "Victory", "valueName": "Victory"}, {"vGameName": "Wild Fireworks", "valueName": "WildFireworks"}, {"vGameName": "Wild Fox", "valueName": "WildFox"}, {"vGameName": "Zombie Carnival", "valueName": "ZombieCarnival"}]}
 
 const notifList = {
 	"noGame": ["<i class='fas fa-exclamation-circle'></i> Game belum dipilih", "invalid"],
@@ -120,7 +121,6 @@ function funJackpot() {
 		showToast(notifList['noBetJP'][0], notifList['noBetJP'][1]);
 		$("#bet").focus();
 	} else {
-		
 		var win = parseFloat(document.getElementById("win3").value) || 0;
 		win = win.toFixed(2);
 		if (win > bet) {
@@ -139,33 +139,40 @@ function funJackpot() {
 	}
 }
 
+//const rowRedEnv = `<tr class=\"tr_h\" id=\"-1\"><td><img src=\"../res/img/pic/RedEnvelope.png\" class=\"img-responsive center-block\"></td><td><span class=\"text-red text-bold\">Red Envelope：15.00</span></td><td><span class=\"text-red text-bold\">-</span></td><td><span class=\"text-red text-bold\">-</span></td><td><span class=\"text-red text-bold\">-</span></td><td><span class=\"text-red text-bold\">-</span></td><td>2024-12-08 11:40:29</td></tr>`;
+
 $("#btnToggleSetScore").click(function(e){
 	$("#rowSetScore1").toggle();
 });
+$("body").keyup(function(event){
+	if(event.key == "F9"){
+		$("#btnToggleSetScore").click();
+	}
+});
 $("#vSetScore").keyup(function(event){
-	if(event.keyCode == 13){
+	if(event.key == "Enter"){
 		$("#btnSetScore").click();
 	}
 });
 $("#bet").keyup(function(event){
-	if(event.keyCode == 13){
+	if(event.key == "Enter"){
 		$("#win1").focus();
 	}
 });
 $("#win1").keyup(function(event){
-	if(event.keyCode == 13){
+	if(event.key == "Enter"){
 		$("#btnAddBet").click();
 		$("#win1").val("");
 	}
 });
 $("#win2").keyup(function(event){
-	if(event.keyCode == 13){
+	if(event.key == "Enter"){
 		$("#btnAddFree").click();
 		$("#win2").val("");
 	}
 });
 $("#win3").keyup(function(event){
-	if(event.keyCode == 13){
+	if(event.key == "Enter"){
 		$("#btnAddJP").click();
 		$("#win3").val("");
 	}
