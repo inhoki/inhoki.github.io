@@ -72,7 +72,7 @@ function addBet() {
 		beginMoney = showBMoney;
 		vTime.setTime(vTime.getTime() - (Math.floor(Math.random() * 8) + 3) * 1000);
 		sTime = vTime.toLocaleDateString('en-CA', options).replace(",", "");
-		const rowBet = `<tr class=\"tr_h\" data-classid=\"3\" data-linenum=\"25\" data-roundno=\"0\" data-tableid=\"0\" data-gamename=\"SeaWorld\" data-logtime=\"2024-11-11 03:10:56\" data-logstr=\"1.00,0.00,108.18,3,2,4,5,6,1,2,10,5,3,10,2,7,3,2,0.04,25,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,2,0.00,0\" id=\"194710\"><td id=\"162\">${gameName}</td><td><span class=\"badge bg-gray\">0</span></td><td>${bet}</td><td>${win}</td><td>${showBMoney.toFixed(2)}</td><td>${endMoney.toFixed(2)}</td><td>${sTime}</td></tr>`;
+		const rowBet = `<tr class=\"tr_h\"><td id=\"162\">${gameName}</td><td><span class=\"badge bg-gray\">0</span></td><td>${bet}</td><td>${win}</td><td>${showBMoney.toFixed(2)}</td><td>${endMoney.toFixed(2)}</td><td>${sTime}</td></tr>`;
 		//$("tblData").prepend(rowBet);
 		document.getElementById('tblData').insertAdjacentHTML('beforeend', rowBet);
 		endMoney = beginMoney;
@@ -90,7 +90,7 @@ function addFree() {
 		beginMoney = showBMoney;
 		vTime.setTime(vTime.getTime() - (Math.floor(Math.random() * 8) + 3) * 1000);
 		sTime = vTime.toLocaleDateString('en-CA', options).replace(",", "");
-		const rowFree = `<tr class=\"tr_h\" data-classid=\"3\" data-linenum=\"25\" data-roundno=\"0\" data-tableid=\"0\" data-gamename=\"SeaWorld\" data-logtime=\"2024-11-11 03:10:02\" data-logstr=\"1.00,1.80,108.38,7,1,2,9,8,7,5,6,9,3,9,7,7,9,6,0.04,25,0.00,0.00,0.60,0.00,0.00,0.00,0.00,0.00,0.60,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.60,0.00,0.00,0.00,0.00,0.00,0,0.00,0\" id=\"194025\"><td id=\"162\">${gameName}</td><td><span class=\"badge bg-gray\">0</span></td><td><span class=\"text-red text-bold\">Free game</span></td><td>${win}</td><td>${showBMoney.toFixed(2)}</td><td>${endMoney.toFixed(2)}</td><td>${sTime}</td></tr>`;
+		const rowFree = `<tr class=\"tr_h\"><td id=\"162\">${gameName}</td><td><span class=\"badge bg-gray\">0</span></td><td><span class=\"text-red text-bold\">Free game</span></td><td>${win}</td><td>${showBMoney.toFixed(2)}</td><td>${endMoney.toFixed(2)}</td><td>${sTime}</td></tr>`;
 		document.getElementById('tblData').insertAdjacentHTML('beforeend', rowFree);
 		endMoney = beginMoney;
 	}

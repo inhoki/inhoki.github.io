@@ -223,13 +223,13 @@ TELEGRAM: ${formatNumber(telegram)}`;
             });
         }
 		$(".tab-cell").keyup(function(event){
-			if(event.keyCode == 13){
+			if(event.key == "Enter"){
 				var index = $(this).index("input");          
 				$("input").eq(index + 1).focus(); 
 			}
 		});
 		$(".enter-cell").keyup(function(event){
-			if(event.keyCode == 13){
+			if(event.key == "Enter"){
 				$("#btnGenerate").click();
 			}
 		});
