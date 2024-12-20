@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./res/css/bootstrap.min.css">
+	<script src="./res/js/w3.js"></script>
     <title>Laporan Harian</title>
     <style>
         body {
@@ -78,29 +79,29 @@
 </head>
 <body>
     <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">inHoki</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">inHoki</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="/">Home</a>
+					</li>
 					<li>
 						<a href="/log">Change Log</a>
 					</li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+				</ul>
+			</div>
+		</div>
+	</nav>
     <div id="container">
         <div class="form-container">
             <h1>Laporan Harian</h1>
@@ -116,13 +117,24 @@
 					<div class="column-2">
 						<label for="teamName">Nama Team: </label>
 						<select id="teamName" name="teamName">
-							<option value="HOKI88">HOKI88</option>
-							<option value="MALAY88">MALAY888</option>
-							<option value="MEGABET88">MEGABET88</option>
-							<option value="DRAGON1131">DRAGON1131</option>
-							<option value="NAGA1131">NAGA1131</option>
-							<option value="DEWAMALAY88">DEWAMALAY88</option>
-							<option value="LACOSTE128">LACOSTE128</option>
+							<optgroup label="Kantor Dragon">
+								<option value="HOKI88">HOKI88</option>
+								<option value="MALAY88">MALAY888</option>
+								<option value="MEGABET88">MEGABET88</option>
+								<option value="DRAGON1131">DRAGON1131</option>
+								<option value="NAGA1131">NAGA1131</option>
+								<option value="DEWAMALAY88">DEWAMALAY88</option>
+								<option value="LACOSTE128">LACOSTE128</option>
+							</optgroup>
+							<optgroup label="Kantor RB">
+								<option value="RINGGITBET">RINGGITBET</option>
+								<option value="AMOYBET">AMOYBET</option>
+								<option value="MBBSLOT">MBBSLOT</option>
+								<option value="MEGA888RASMI">MEGA888RASMI</option>
+								<option value="PUSSY888RASMI">PUSSY888RASMI</option>
+								<option value="MEGA888US">MEGA888US</option>
+								<option value="ZEUSMALAY88">ZEUSMALAY88</option>
+							</optgroup>
 						</select>
 					</div>
 				</div>
@@ -176,6 +188,7 @@
 	<script src="./res/js/jquery-1.11.3.min.js"></script>
 	<script src="./res/js/bootstrap.min.js"></script>
     <script>
+		w3.includeHTML();
         // Fungsi untuk memformat angka dengan pemisah ribuan
         function formatNumber(num, locale = 'id-ID') {
             return num.toLocaleString(locale);
