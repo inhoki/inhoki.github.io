@@ -36,6 +36,14 @@
             border: 1px solid #ccc;
             box-sizing: border-box;
         }
+		textarea {
+			width: calc(100% - 16px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
         .submit-btn {
             background-color: #4CAF50;
             color: white;
@@ -131,19 +139,33 @@
 				</div>
 			</div>
         </div>
+		<div class="form-group">
+			<label for="listName">List Name:</label>
+			<textarea name="listName" id="listName"></textarea>
+		</div>
         <button type="button" class="submit-btn" id="btnGenerate" onclick="addList()">Add List</button>
+		<button type="button" class="submit-btn" id="btnParse" onclick="parseList()">Parse Name</button>
     </form>
+	<br>
 </div>
 <script src="./res/js/jquery-1.11.3.min.js"></script>
 <script src="./res/js/bootstrap.min.js"></script>
 <script>
-	
+	var listName;
 	var counter = 1;
     function roundNumber(num) {
         return Math.round(num);
     }
 	function formatNumber(num, locale = 'id-ID') {
 		return num.toLocaleString(locale);
+	}
+	function cleanArray(a) {
+		a = a.split("\n");
+		a = [...new Set(a)];
+		if (a.indexOf("") != "-1") {
+			a.splice(a.indexOf(""), 1)
+		}
+		return a.map(function(s) { return s.trim() })
 	}
 	//for (var i = 0; i < 100; i++) x.push(50);
 	function textToX(name) {
@@ -155,6 +177,10 @@
 			temp1.push(temp[i].join(""));
 		}
 		return temp1.join(" ");
+	}
+	function parseList() {
+		listName = document.getElementById("listName").value;
+		listName = cleanArray(listName);
 	}
 	function addList() {
 		var name = document.getElementById("name").value;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./res/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
     <title>Laporan Team</title>
     <style>
         body {
@@ -122,7 +123,10 @@
 							<option value="DRAGON1131">DRAGON1131</option>
 							<option value="NAGA1131">NAGA1131</option>
 							<option value="DEWAMALAY88">DEWAMALAY88</option>
-							<option value="LACOSTE128">LACOSTE128</option>
+							<option value="ROYAL518">ROYAL518</option>
+                            <option value="KOI88">KOI88</option>
+                            <option value="ZEUSMALAY88">ZEUSMALAY88</option>
+                            <option value="SPINMEGA88">SPINMEGA88</option>
 						</optgroup>
 						<optgroup label="Kantor RB">
 							<option value="RINGGITBET">RINGGITBET</option>
@@ -131,7 +135,6 @@
 							<option value="MEGA888RASMI">MEGA888RASMI</option>
 							<option value="PUSSY888RESMI">PUSSY888RESMI</option>
 							<option value="MEGA888US">MEGA888US</option>
-							<option value="ZEUSMALAY88">ZEUSMALAY88</option>
 							<option value="MYKISS918">MYKISS918</option>
 						</optgroup>
 					</select>
@@ -170,6 +173,7 @@
 </div>
 <script src="./res/js/jquery-1.11.3.min.js"></script>
 <script src="./res/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
 <script>
     function roundNumber(num) {
         return Math.round(num);
@@ -242,6 +246,11 @@ TOTAL: ${plusMinusNum(total)}`;
 		if(event.keyCode == 13){
 			$("#btnGenerate").click();
 		}
+	});
+	$(document).ready(function () {
+		$('select').selectize({
+			sortField: 'text'
+		});
 	});
 </script>
 </body>
