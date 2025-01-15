@@ -1,6 +1,5 @@
 const toastBox = document.querySelector('.toastBox');
 
-
 function showToast(message, type) {
     const toast = document.createElement('div');
     toast.classList.add('toast', type);
