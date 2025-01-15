@@ -243,6 +243,7 @@ WA MASUK: ${formatNumber(waMasuk)}
 TELEGRAM: ${formatNumber(telegram)}`;
 
             document.getElementById('reportOutput').textContent = report;
+			localStorage.setItem("savedTeam", teamName);
         }
 
         function copyToClipboard() {
@@ -265,6 +266,7 @@ TELEGRAM: ${formatNumber(telegram)}`;
 			}
 		});
 		$(document).ready(function () {
+			$('#teamName').val(localStorage.getItem("savedTeam"));
 			$('select').selectize({
 				sortField: 'text'
 			});

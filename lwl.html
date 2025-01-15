@@ -237,6 +237,7 @@ TOTAL: ${plusMinusNum(total)}`;
 
         // Display the report
         document.getElementById('report').textContent = reportText;
+        localStorage.setItem("savedTeam", team);
     }
 
     function copyReport() {
@@ -261,6 +262,7 @@ TOTAL: ${plusMinusNum(total)}`;
 		}
 	});
 	$(document).ready(function () {
+        $('#team').val(localStorage.getItem("savedTeam"));
 		$('select').selectize();
 	});
 </script>
